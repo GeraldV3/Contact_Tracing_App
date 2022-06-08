@@ -94,7 +94,7 @@
             // Design1
             // 
             this.Design1.BackColor = System.Drawing.Color.White;
-            this.Design1.Location = new System.Drawing.Point(-6, 58);
+            this.Design1.Location = new System.Drawing.Point(-5, 58);
             this.Design1.Name = "Design1";
             this.Design1.Size = new System.Drawing.Size(1028, 525);
             this.Design1.TabIndex = 0;
@@ -156,56 +156,64 @@
             // 
             this.LastName_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.LastName_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LastName_BOX.ForeColor = System.Drawing.Color.Black;
             this.LastName_BOX.Location = new System.Drawing.Point(44, 120);
             this.LastName_BOX.Name = "LastName_BOX";
             this.LastName_BOX.Size = new System.Drawing.Size(174, 30);
             this.LastName_BOX.TabIndex = 26;
-            this.LastName_BOX.Text = "Last Name                    ";
+            this.LastName_BOX.Text = "Last Name";
+            this.LastName_BOX.Enter += new System.EventHandler(this.LastName_BOX_Enter);
+            this.LastName_BOX.Leave += new System.EventHandler(this.LastName_BOX_Leave);
             // 
             // FirstName_BOX
             // 
             this.FirstName_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FirstName_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FirstName_BOX.ForeColor = System.Drawing.Color.Black;
             this.FirstName_BOX.Location = new System.Drawing.Point(318, 112);
             this.FirstName_BOX.Name = "FirstName_BOX";
             this.FirstName_BOX.Size = new System.Drawing.Size(174, 30);
             this.FirstName_BOX.TabIndex = 27;
-            this.FirstName_BOX.Text = "First Name                    ";
+            this.FirstName_BOX.Text = "First Name";
             // 
             // MiddleName_BOX
             // 
             this.MiddleName_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.MiddleName_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MiddleName_BOX.ForeColor = System.Drawing.Color.Black;
             this.MiddleName_BOX.Location = new System.Drawing.Point(585, 117);
             this.MiddleName_BOX.Name = "MiddleName_BOX";
             this.MiddleName_BOX.Size = new System.Drawing.Size(174, 30);
             this.MiddleName_BOX.TabIndex = 28;
-            this.MiddleName_BOX.Text = "Middle Name              ";
+            this.MiddleName_BOX.Text = "Middle Name";
             // 
             // ExtName_BOX
             // 
             this.ExtName_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ExtName_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExtName_BOX.ForeColor = System.Drawing.Color.Black;
             this.ExtName_BOX.Location = new System.Drawing.Point(821, 117);
             this.ExtName_BOX.Name = "ExtName_BOX";
             this.ExtName_BOX.Size = new System.Drawing.Size(174, 30);
             this.ExtName_BOX.TabIndex = 29;
-            this.ExtName_BOX.Text = "Ext. Name                    ";
+            this.ExtName_BOX.Text = "Ext. Name";
             // 
             // ID_BOX
             // 
             this.ID_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ID_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ID_BOX.ForeColor = System.Drawing.Color.Black;
             this.ID_BOX.Location = new System.Drawing.Point(44, 193);
             this.ID_BOX.Name = "ID_BOX";
             this.ID_BOX.Size = new System.Drawing.Size(174, 30);
             this.ID_BOX.TabIndex = 30;
-            this.ID_BOX.Text = "ID                                      ";
+            this.ID_BOX.Text = "ID";
             // 
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox8.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox8.ForeColor = System.Drawing.Color.Black;
             this.textBox8.Location = new System.Drawing.Point(824, 448);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(174, 30);
@@ -216,6 +224,7 @@
             // 
             this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox9.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox9.ForeColor = System.Drawing.Color.Black;
             this.textBox9.Location = new System.Drawing.Point(585, 448);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(174, 30);
@@ -226,6 +235,7 @@
             // 
             this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox10.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox10.ForeColor = System.Drawing.Color.Black;
             this.textBox10.Location = new System.Drawing.Point(318, 448);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(174, 30);
@@ -236,6 +246,7 @@
             // 
             this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox11.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox11.ForeColor = System.Drawing.Color.Black;
             this.textBox11.Location = new System.Drawing.Point(44, 448);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(174, 30);
@@ -246,6 +257,7 @@
             // 
             this.HomeNumber_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.HomeNumber_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HomeNumber_BOX.ForeColor = System.Drawing.Color.Black;
             this.HomeNumber_BOX.Location = new System.Drawing.Point(44, 279);
             this.HomeNumber_BOX.Name = "HomeNumber_BOX";
             this.HomeNumber_BOX.Size = new System.Drawing.Size(260, 30);
@@ -256,16 +268,18 @@
             // 
             this.IDNumber_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.IDNumber_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IDNumber_BOX.ForeColor = System.Drawing.Color.Black;
             this.IDNumber_BOX.Location = new System.Drawing.Point(318, 193);
             this.IDNumber_BOX.Name = "IDNumber_BOX";
             this.IDNumber_BOX.Size = new System.Drawing.Size(174, 30);
             this.IDNumber_BOX.TabIndex = 38;
-            this.IDNumber_BOX.Text = "ID Number                    ";
+            this.IDNumber_BOX.Text = "ID Number";
             // 
             // StreetName_BOX
             // 
             this.StreetName_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.StreetName_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StreetName_BOX.ForeColor = System.Drawing.Color.Black;
             this.StreetName_BOX.Location = new System.Drawing.Point(387, 279);
             this.StreetName_BOX.Name = "StreetName_BOX";
             this.StreetName_BOX.Size = new System.Drawing.Size(260, 30);
@@ -276,6 +290,7 @@
             // 
             this.Municipality_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Municipality_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Municipality_BOX.ForeColor = System.Drawing.Color.Black;
             this.Municipality_BOX.Location = new System.Drawing.Point(44, 347);
             this.Municipality_BOX.Name = "Municipality_BOX";
             this.Municipality_BOX.Size = new System.Drawing.Size(260, 30);
@@ -286,6 +301,7 @@
             // 
             this.ProvinceCity_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ProvinceCity_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ProvinceCity_BOX.ForeColor = System.Drawing.Color.Black;
             this.ProvinceCity_BOX.Location = new System.Drawing.Point(387, 347);
             this.ProvinceCity_BOX.Name = "ProvinceCity_BOX";
             this.ProvinceCity_BOX.Size = new System.Drawing.Size(260, 30);
@@ -296,6 +312,7 @@
             // 
             this.Barangay_BOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Barangay_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Barangay_BOX.ForeColor = System.Drawing.Color.Black;
             this.Barangay_BOX.Location = new System.Drawing.Point(735, 279);
             this.Barangay_BOX.Name = "Barangay_BOX";
             this.Barangay_BOX.Size = new System.Drawing.Size(260, 30);
@@ -357,9 +374,10 @@
             this.Next_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next_Button.Location = new System.Drawing.Point(845, 495);
             this.Next_Button.Name = "Next_Button";
-            this.Next_Button.Size = new System.Drawing.Size(133, 42);
+            this.Next_Button.Size = new System.Drawing.Size(132, 42);
             this.Next_Button.TabIndex = 49;
             this.Next_Button.UseVisualStyleBackColor = false;
+            this.Next_Button.Click += new System.EventHandler(this.Next_Button_Click);
             // 
             // Questions
             // 
