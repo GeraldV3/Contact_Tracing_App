@@ -30,6 +30,7 @@ namespace Contact_Tracing_App.Properties
             File1.WriteLine("Food Allergy? " + Food_BOX.Text);
             File1.WriteLine("Pet Allergy? " + Pet_BOX.Text);
             File1.WriteLine("Diabetes? " + Diabetes_BOX.Text);
+            File1.WriteLine("Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -154,19 +155,21 @@ namespace Contact_Tracing_App.Properties
         }
         private void Diagnosed_BOX_Enter(object sender, EventArgs e)
         {
-
+            if (Diagnosed_BOX.Text == "Yes/No")
+                Diagnosed_BOX.Text = "";
+                Diagnosed_BOX.ForeColor = Color.Black;
         }
         private void Diagnosed_BOX_Leave(object sender, EventArgs e)
         {
-
+            if (Diagnosed_BOX.Text == "")
+                Diagnosed_BOX.Text = "Yes/No";
+                Diagnosed_BOX.ForeColor = Color.Gray;
         }
         private void Class_BOX_Enter(object sender, EventArgs e)
         {
-
         }
         private void Class_BOX_Leave(object sender, EventArgs e)
         {
-
         }
     }
 }
