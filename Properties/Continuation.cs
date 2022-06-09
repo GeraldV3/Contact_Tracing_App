@@ -27,6 +27,7 @@ namespace Contact_Tracing_App.Properties
             File1.WriteLine("Kidney Disease? " + Kidney_BOX.Text);
             File1.WriteLine("Asthma? " + Asthma_BOX.Text);
             File1.WriteLine("Cancer? " + Cancer_BOX.Text);
+            File1.WriteLine("Food Allergy? " + Food_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -115,11 +116,15 @@ namespace Contact_Tracing_App.Properties
         }
         private void Food_BOX_Enter(object sender, EventArgs e)
         {
-
+            if (Food_BOX.Text == "Food Allergy?")
+                Food_BOX.Text = "";
+                Food_BOX.ForeColor = Color.Black;
         }
         private void Food_BOX_Leave(object sender, EventArgs e)
         {
-
+            if (Food_BOX.Text == "")
+                Food_BOX.Text = "Food Allergy?";
+                Food_BOX.ForeColor = Color.Gray;
         }
         private void Pet_BOX_Enter(object sender, EventArgs e)
         {
