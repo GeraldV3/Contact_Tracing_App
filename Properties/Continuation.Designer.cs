@@ -53,7 +53,7 @@
             this.Interaction_BOX.Name = "Interaction_BOX";
             this.Interaction_BOX.Size = new System.Drawing.Size(327, 30);
             this.Interaction_BOX.TabIndex = 27;
-            this.Interaction_BOX.Text = "Directly Interaction with Covid patient?";
+            this.Interaction_BOX.Text = "Directly Interaction with Covid Patient?";
             this.Interaction_BOX.Enter += new System.EventHandler(this.Interaction_BOX_Enter);
             this.Interaction_BOX.Leave += new System.EventHandler(this.Interaction_BOX_Leave);
             // 

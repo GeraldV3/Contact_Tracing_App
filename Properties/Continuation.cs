@@ -21,27 +21,32 @@ namespace Contact_Tracing_App.Properties
         {
             StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt", true);
             File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
+            File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
         {
-            if (Interaction_BOX.Text == "Directly Interaction with Covid patient?")
+            if (Interaction_BOX.Text == "Directly Interaction with Covid Patient?")
                 Interaction_BOX.Text = "";
                 Interaction_BOX.ForeColor = Color.Black;
         }
         private void Interaction_BOX_Leave(object sender, EventArgs e)
         {
             if (Interaction_BOX.Text == "")
-                Interaction_BOX.Text = "Directly Interaction with Covid patient?";
+                Interaction_BOX.Text = "Directly Interaction with Covid Patient?";
                 Interaction_BOX.ForeColor = Color.Gray;
         }
         private void Drug_BOX_Enter(object sender, EventArgs e)
         {
-
+            if (Drug_BOX.Text == "Drug Allergy?")
+                Drug_BOX.Text = "";
+                Drug_BOX.ForeColor = Color.Black;
         }
         private void Drug_BOX_Leave(object sender, EventArgs e)
         {
-
+            if (Drug_BOX.Text == "")
+                Drug_BOX.Text = "Drug Allergy?";
+                Drug_BOX.ForeColor = Color.Gray;
         }
     }
 }
