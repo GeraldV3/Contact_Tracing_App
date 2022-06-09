@@ -127,6 +127,8 @@
             this.MiddleName_BOX.Size = new System.Drawing.Size(174, 30);
             this.MiddleName_BOX.TabIndex = 28;
             this.MiddleName_BOX.Text = "Middle Name";
+            this.MiddleName_BOX.Enter += new System.EventHandler(this.MiddleName_BOX_Enter);
+            this.MiddleName_BOX.Leave += new System.EventHandler(this.MiddleName_BOX_Leave);
             // 
             // ExtName_BOX
             // 

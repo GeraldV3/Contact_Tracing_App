@@ -35,6 +35,7 @@ namespace Contact_Tracing_App.Properties
             StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt");
             File.WriteLine("Last Name : " + LastName_BOX.Text);
             File.WriteLine("First Name : " + FirstName_BOX.Text);
+            File.WriteLine("MiddleName Name : " + MiddleName_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -49,6 +50,20 @@ namespace Contact_Tracing_App.Properties
             if (FirstName_BOX.Text == "")
                 FirstName_BOX.Text = "First Name";
                 FirstName_BOX.ForeColor = Color.Silver;
+        }
+
+        private void MiddleName_BOX_Enter(object sender, EventArgs e)
+        {
+            if (MiddleName_BOX.Text == "Middle Name")
+                MiddleName_BOX.Text = "";
+                MiddleName_BOX.ForeColor = Color.Black;
+        }
+
+        private void MiddleName_BOX_Leave(object sender, EventArgs e)
+        {
+            if (MiddleName_BOX.Text == "")
+                MiddleName_BOX.Text = "Middle Name";
+                MiddleName_BOX.ForeColor = Color.Silver;
         }
     }
 }
