@@ -22,7 +22,7 @@ namespace Contact_Tracing_App.Properties
         {
                 if (LastName_BOX.Text == "Last Name")
                     LastName_BOX.Text = "";
-                LastName_BOX.ForeColor = Color.Black;
+                    LastName_BOX.ForeColor = Color.Black;
         }
         private void LastName_BOX_Leave(object sender, EventArgs e)
         {
@@ -32,9 +32,23 @@ namespace Contact_Tracing_App.Properties
         }
         private void Next_Button_Click(object sender, EventArgs e)
         {
-            StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\Information");
-            File.WriteLine("First Name : " + LastName_BOX.Text);
+            StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt");
+            File.WriteLine("Last Name : " + LastName_BOX.Text);
+            File.WriteLine("First Name : " + FirstName_BOX.Text);
             File.Close();
+        }
+        private void FirstName_BOX_Enter(object sender, EventArgs e)
+        {
+            if (FirstName_BOX.Text == "First Name")
+                FirstName_BOX.Text = "";
+                FirstName_BOX.ForeColor = Color.Black;
+        }
+
+        private void FirstName_BOX_Leave(object sender, EventArgs e)
+        {
+            if (FirstName_BOX.Text == "")
+                FirstName_BOX.Text = "First Name";
+                FirstName_BOX.ForeColor = Color.Silver;
         }
     }
 }

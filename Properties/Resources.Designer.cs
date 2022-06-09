@@ -83,9 +83,29 @@ namespace Contact_Tracing_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Next {
+        internal static System.Drawing.Bitmap New_Background {
             get {
-                object obj = ResourceManager.GetObject("Next", resourceCulture);
+                object obj = ResourceManager.GetObject("New Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap New_Background1 {
+            get {
+                object obj = ResourceManager.GetObject("New Background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Next_Button {
+            get {
+                object obj = ResourceManager.GetObject("Next Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
