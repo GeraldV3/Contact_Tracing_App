@@ -24,6 +24,7 @@ namespace Contact_Tracing_App.Properties
             File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
             File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
             File1.WriteLine("Hypertension? " + Hypertension_BOX.Text);
+            File1.WriteLine("Kidney Disease? " + Kidney_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -73,6 +74,74 @@ namespace Contact_Tracing_App.Properties
             if (Hypertension_BOX.Text == "")
                 Hypertension_BOX.Text = "Hypertension?";
                 Hypertension_BOX.ForeColor = Color.Gray;
+        }
+        private void Kidney_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Kidney_BOX.Text == "Kidney Disease?")
+                Kidney_BOX.Text = "";
+                Kidney_BOX.ForeColor = Color.Black;
+        }
+        private void Kidney_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Kidney_BOX.Text == "")
+                Kidney_BOX.Text = "Kidney Disease?";
+                Kidney_BOX.ForeColor = Color.Gray;
+        }
+        private void Asthma_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Asthma_BOX_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void Cancer_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Cancer_BOX_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void Food_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Food_BOX_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void Pet_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Pet_BOX_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void Diabetes_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Diabetes_BOX_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void Diagnosed_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Diagnosed_BOX_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void Class_BOX_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void Class_BOX_Leave(object sender, EventArgs e)
+        {
+
         }
     }
 }

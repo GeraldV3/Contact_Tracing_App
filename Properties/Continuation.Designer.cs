@@ -80,6 +80,8 @@
             this.Diabetes_BOX.Size = new System.Drawing.Size(145, 30);
             this.Diabetes_BOX.TabIndex = 29;
             this.Diabetes_BOX.Text = "Diabetes?";
+            this.Diabetes_BOX.Enter += new System.EventHandler(this.Diabetes_BOX_Enter);
+            this.Diabetes_BOX.Leave += new System.EventHandler(this.Diabetes_BOX_Leave);
             // 
             // Insect_BOX
             // 
@@ -117,6 +119,8 @@
             this.Kidney_BOX.Size = new System.Drawing.Size(145, 30);
             this.Kidney_BOX.TabIndex = 32;
             this.Kidney_BOX.Text = "Kidney Disease?";
+            this.Kidney_BOX.Enter += new System.EventHandler(this.Kidney_BOX_Enter);
+            this.Kidney_BOX.Leave += new System.EventHandler(this.Kidney_BOX_Leave);
             // 
             // Asthma_BOX
             // 
@@ -128,6 +132,8 @@
             this.Asthma_BOX.Size = new System.Drawing.Size(145, 30);
             this.Asthma_BOX.TabIndex = 33;
             this.Asthma_BOX.Text = "Asthma?";
+            this.Asthma_BOX.Enter += new System.EventHandler(this.Asthma_BOX_Enter);
+            this.Asthma_BOX.Leave += new System.EventHandler(this.Asthma_BOX_Leave);
             // 
             // Cancer_BOX
             // 
@@ -139,6 +145,8 @@
             this.Cancer_BOX.Size = new System.Drawing.Size(145, 30);
             this.Cancer_BOX.TabIndex = 36;
             this.Cancer_BOX.Text = "Cancer?";
+            this.Cancer_BOX.Enter += new System.EventHandler(this.Cancer_BOX_Enter);
+            this.Cancer_BOX.Leave += new System.EventHandler(this.Cancer_BOX_Leave);
             // 
             // Pet_BOX
             // 
@@ -150,6 +158,8 @@
             this.Pet_BOX.Size = new System.Drawing.Size(145, 30);
             this.Pet_BOX.TabIndex = 37;
             this.Pet_BOX.Text = "Pet Allergy?";
+            this.Pet_BOX.Enter += new System.EventHandler(this.Pet_BOX_Enter);
+            this.Pet_BOX.Leave += new System.EventHandler(this.Pet_BOX_Leave);
             // 
             // Food_BOX
             // 
@@ -161,6 +171,8 @@
             this.Food_BOX.Size = new System.Drawing.Size(145, 30);
             this.Food_BOX.TabIndex = 38;
             this.Food_BOX.Text = "Food Allergy?";
+            this.Food_BOX.Enter += new System.EventHandler(this.Food_BOX_Enter);
+            this.Food_BOX.Leave += new System.EventHandler(this.Food_BOX_Leave);
             // 
             // Diagnosed_BOX
             // 
@@ -172,6 +184,8 @@
             this.Diagnosed_BOX.Size = new System.Drawing.Size(65, 30);
             this.Diagnosed_BOX.TabIndex = 40;
             this.Diagnosed_BOX.Text = "Yes/No";
+            this.Diagnosed_BOX.Enter += new System.EventHandler(this.Diagnosed_BOX_Enter);
+            this.Diagnosed_BOX.Leave += new System.EventHandler(this.Diagnosed_BOX_Leave);
             // 
             // Class_BOX
             // 
@@ -183,6 +197,8 @@
             this.Class_BOX.Size = new System.Drawing.Size(432, 30);
             this.Class_BOX.TabIndex = 41;
             this.Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
+            this.Class_BOX.Enter += new System.EventHandler(this.Class_BOX_Enter);
+            this.Class_BOX.Leave += new System.EventHandler(this.Class_BOX_Leave);
             // 
             // Submet_BTN
             // 
