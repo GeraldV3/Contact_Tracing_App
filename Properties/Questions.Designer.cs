@@ -177,6 +177,8 @@
             this.Birthday_BOX.Size = new System.Drawing.Size(174, 30);
             this.Birthday_BOX.TabIndex = 34;
             this.Birthday_BOX.Text = "mm/dd/yyyy";
+            this.Birthday_BOX.Enter += new System.EventHandler(this.Birthday_BOX_Enter);
+            this.Birthday_BOX.Leave += new System.EventHandler(this.Birthday_BOX_Leave);
             // 
             // Gender_BOX
             // 

@@ -43,6 +43,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("Municipality : " + Municipality_BOX.Text);
             File.WriteLine("Contact : " + Contact_BOX.Text);
             File.WriteLine("Gender : " + Gender_BOX.Text);
+            File.WriteLine("Birthday : " + Birthday_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -188,6 +189,18 @@ namespace Contact_Tracing_App.Properties
             if (Gender_BOX.Text == "")
                 Gender_BOX.Text = "Gender";
                 Gender_BOX.ForeColor = Color.Gray;
+        }
+        private void Birthday_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Birthday_BOX.Text == "mm/dd/yyyy")
+                Birthday_BOX.Text = "";
+                Birthday_BOX.ForeColor = Color.Black;
+        }
+        private void Birthday_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Birthday_BOX.Text == "")
+                Birthday_BOX.Text = "mm/dd/yyyy";
+                Birthday_BOX.ForeColor = Color.Gray;
         }
     }
 }
