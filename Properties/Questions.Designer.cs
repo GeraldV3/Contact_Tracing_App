@@ -271,6 +271,8 @@
             this.Barangay_BOX.Size = new System.Drawing.Size(260, 30);
             this.Barangay_BOX.TabIndex = 43;
             this.Barangay_BOX.Text = "Barangay";
+            this.Barangay_BOX.Enter += new System.EventHandler(this.Barangay_BOX_Enter);
+            this.Barangay_BOX.Leave += new System.EventHandler(this.Barangay_BOX_Leave);
             // 
             // Next_Button
             // 
