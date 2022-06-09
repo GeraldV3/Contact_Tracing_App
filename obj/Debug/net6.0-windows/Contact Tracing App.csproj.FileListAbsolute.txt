@@ -5,7 +5,6 @@ C:\Users\pc\Desktop\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing
 C:\Users\pc\Desktop\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.pdb
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.AssemblyReference.cache
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Resgistration.resources
-C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Form2.resources
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Questions.resources
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Resources.resources
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.GenerateResource.cache

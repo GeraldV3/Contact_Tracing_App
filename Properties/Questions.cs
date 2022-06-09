@@ -31,7 +31,7 @@ namespace Contact_Tracing_App.Properties
         }
         private void Next_Button_Click(object sender, EventArgs e)
         {
-            StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt");
+            StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt", true);
             File.WriteLine("Last Name : " + LastName_BOX.Text);
             File.WriteLine("First Name : " + FirstName_BOX.Text);
             File.WriteLine("Middle Name : " + MiddleName_BOX.Text);
@@ -50,6 +50,7 @@ namespace Contact_Tracing_App.Properties
             Continuation Next = new Continuation();
             Next.ShowDialog();
             Show();
+
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
         {

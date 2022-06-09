@@ -41,6 +41,7 @@
             this.Food_BOX = new System.Windows.Forms.TextBox();
             this.Diagnosed_BOX = new System.Windows.Forms.TextBox();
             this.Class_BOX = new System.Windows.Forms.TextBox();
+            this.Submet_BTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Interaction_BOX
@@ -53,6 +54,8 @@
             this.Interaction_BOX.Size = new System.Drawing.Size(327, 30);
             this.Interaction_BOX.TabIndex = 27;
             this.Interaction_BOX.Text = "Directly Interaction with Covid patient?";
+            this.Interaction_BOX.Enter += new System.EventHandler(this.Interaction_BOX_Enter);
+            this.Interaction_BOX.Leave += new System.EventHandler(this.Interaction_BOX_Leave);
             // 
             // Drug_BOX
             // 
@@ -64,6 +67,8 @@
             this.Drug_BOX.Size = new System.Drawing.Size(145, 30);
             this.Drug_BOX.TabIndex = 28;
             this.Drug_BOX.Text = "Drug Allergy?";
+            this.Drug_BOX.Enter += new System.EventHandler(this.Drug_BOX_Enter);
+            this.Drug_BOX.Leave += new System.EventHandler(this.Drug_BOX_Leave);
             // 
             // Diabetes_BOX
             // 
@@ -175,6 +180,16 @@
             this.Class_BOX.TabIndex = 41;
             this.Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
             // 
+            // Submet_BTN
+            // 
+            this.Submet_BTN.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.Submet;
+            this.Submet_BTN.Location = new System.Drawing.Point(876, 657);
+            this.Submet_BTN.Name = "Submet_BTN";
+            this.Submet_BTN.Size = new System.Drawing.Size(134, 38);
+            this.Submet_BTN.TabIndex = 42;
+            this.Submet_BTN.UseVisualStyleBackColor = true;
+            this.Submet_BTN.Click += new System.EventHandler(this.Submet_BTN_Click);
+            // 
             // Continuation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -182,6 +197,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.Continuation4;
             this.ClientSize = new System.Drawing.Size(1014, 718);
+            this.Controls.Add(this.Submet_BTN);
             this.Controls.Add(this.Class_BOX);
             this.Controls.Add(this.Diagnosed_BOX);
             this.Controls.Add(this.Food_BOX);
@@ -216,5 +232,6 @@
         private TextBox Food_BOX;
         private TextBox Diagnosed_BOX;
         private TextBox Class_BOX;
+        private Button Submet_BTN;
     }
 }

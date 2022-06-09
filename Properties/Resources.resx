@@ -124,6 +124,9 @@
   <data name="New Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Continuation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Continuation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="New Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +139,7 @@
   <data name="Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Continuation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\Continuation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Submet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Submet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
