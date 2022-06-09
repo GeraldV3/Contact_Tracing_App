@@ -45,6 +45,11 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("Gender : " + Gender_BOX.Text);
             File.WriteLine("Birthday : " + Birthday_BOX.Text);
             File.Close();
+
+            Hide();
+            Continuation Next = new Continuation();
+            Next.ShowDialog();
+            Show();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
         {

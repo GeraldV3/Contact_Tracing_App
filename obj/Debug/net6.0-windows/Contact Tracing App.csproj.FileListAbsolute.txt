@@ -18,3 +18,4 @@ C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\refint\Contact 
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.pdb
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.genruntimeconfig.cache
 C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\ref\Contact Tracing App.dll
+C:\Users\pc\Desktop\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Continuation.resources
