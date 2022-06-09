@@ -202,6 +202,18 @@ namespace Contact_Tracing_App.Properties
                 Birthday_BOX.Text = "mm/dd/yyyy";
                 Birthday_BOX.ForeColor = Color.Gray;
         }
+        private void CivilStatus_BOX_Enter(object sender, EventArgs e)
+        {
+            if (CivilStatus_BOX.Text == "Civil Status")
+                CivilStatus_BOX.Text = "";
+                CivilStatus_BOX.ForeColor = Color.Black;
+        }
+        private void CivilStatus_BOX_Leave(object sender, EventArgs e)
+        {
+            if (CivilStatus_BOX.Text == "")
+                CivilStatus_BOX.Text = "Civil Status";
+                CivilStatus_BOX.ForeColor = Color.Gray;
+        }
     }
 }
 

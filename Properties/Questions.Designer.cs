@@ -166,6 +166,8 @@
             this.CivilStatus_BOX.Size = new System.Drawing.Size(174, 30);
             this.CivilStatus_BOX.TabIndex = 33;
             this.CivilStatus_BOX.Text = "Civil Status";
+            this.CivilStatus_BOX.Enter += new System.EventHandler(this.CivilStatus_BOX_Enter);
+            this.CivilStatus_BOX.Leave += new System.EventHandler(this.CivilStatus_BOX_Leave);
             // 
             // Birthday_BOX
             // 
