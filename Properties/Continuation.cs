@@ -25,6 +25,7 @@ namespace Contact_Tracing_App.Properties
             File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
             File1.WriteLine("Hypertension? " + Hypertension_BOX.Text);
             File1.WriteLine("Kidney Disease? " + Kidney_BOX.Text);
+            File1.WriteLine("Asthma? " + Asthma_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -89,11 +90,15 @@ namespace Contact_Tracing_App.Properties
         }
         private void Asthma_BOX_Enter(object sender, EventArgs e)
         {
-
+            if (Asthma_BOX.Text == "Asthma?")
+                Asthma_BOX.Text = "";
+                Asthma_BOX.ForeColor = Color.Black;
         }
         private void Asthma_BOX_Leave(object sender, EventArgs e)
         {
-
+            if (Asthma_BOX.Text == "")
+                Asthma_BOX.Text = "Asthma?";
+                Asthma_BOX.ForeColor = Color.Gray;
         }
         private void Cancer_BOX_Enter(object sender, EventArgs e)
         {
