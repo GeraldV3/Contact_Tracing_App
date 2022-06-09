@@ -236,6 +236,8 @@
             this.StreetName_BOX.Size = new System.Drawing.Size(260, 30);
             this.StreetName_BOX.TabIndex = 39;
             this.StreetName_BOX.Text = "Street Name";
+            this.StreetName_BOX.Enter += new System.EventHandler(this.StreetName_BOX_Enter);
+            this.StreetName_BOX.Leave += new System.EventHandler(this.StreetName_BOX_Leave);
             // 
             // Municipality_BOX
             // 

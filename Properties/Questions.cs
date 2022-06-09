@@ -39,6 +39,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("ID : " + ID_BOX.Text);
             File.WriteLine("ID Number : " + IDNumber_BOX.Text);
             File.WriteLine("Home Number : " + HomeNumber_BOX.Text);
+            File.WriteLine("Street Name : " + StreetName_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -117,6 +118,19 @@ namespace Contact_Tracing_App.Properties
             if (HomeNumber_BOX.Text == "")
                 HomeNumber_BOX.Text = "Home Number";
                 HomeNumber_BOX.ForeColor = Color.Gray;
+        }
+
+        private void StreetName_BOX_Enter(object sender, EventArgs e)
+        {
+            if (StreetName_BOX.Text == "Street Name")
+                StreetName_BOX.Text = "";
+                StreetName_BOX.ForeColor = Color.Black;
+        }
+        private void StreetName_BOX_Leave(object sender, EventArgs e)
+        {
+            if (StreetName_BOX.Text == "")
+                StreetName_BOX.Text = "Street Name";
+                StreetName_BOX.ForeColor = Color.Gray;
         }
     }
 }
