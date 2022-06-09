@@ -16,22 +16,43 @@ namespace Contact_Tracing_App.Properties
         public Continuation()
         {
             InitializeComponent();
+            Interaction_LBL.Visible = true;
+            Drug_LBL.Visible = true;    
+            Insect_LBL.Visible = true;  
+            Hypertension_LBL.Visible = true;
+            Kidney_LBL.Visible = true;
+            Asthma_LBL.Visible = true;  
+            Cancer_LBL.Visible = true;  
+            Food_LBL.Visible= true;
+            Pet_LBL.Visible = true; 
+            Diabetes_LBL.Visible = true;    
+            Diagnosed_LBL.Visible = true;   
         }
         private void Submet_BTN_Click(object sender, EventArgs e)
         {
-            StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt", true);
-            File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
-            File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
-            File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
-            File1.WriteLine("Hypertension? " + Hypertension_BOX.Text);
-            File1.WriteLine("Kidney Disease? " + Kidney_BOX.Text);
-            File1.WriteLine("Asthma? " + Asthma_BOX.Text);
-            File1.WriteLine("Cancer? " + Cancer_BOX.Text);
-            File1.WriteLine("Food Allergy? " + Food_BOX.Text);
-            File1.WriteLine("Pet Allergy? " + Pet_BOX.Text);
-            File1.WriteLine("Diabetes? " + Diabetes_BOX.Text);
-            File1.WriteLine("Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text);
-            File1.Close();
+          if (Interaction_BOX.Text == "" || Drug_BOX.Text == "" || Insect_BOX.Text == "" || Hypertension_BOX.Text == "" || Kidney_BOX.Text == "" || Asthma_BOX.Text == ""
+                || Cancer_BOX.Text == "" || Food_BOX.Text == "" || Pet_BOX.Text == "" || Diabetes_BOX.Text == "" || Diagnosed_BOX.Text == "")
+            {
+                MessageBox.Show("Please Complete the Form", "Error", MessageBoxButtons.OK);
+            }
+          else
+            {
+                StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\Contract Tracing File\Info.txt", true);
+                File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
+                File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
+                File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
+                File1.WriteLine("Hypertension? " + Hypertension_BOX.Text);
+                File1.WriteLine("Kidney Disease? " + Kidney_BOX.Text);
+                File1.WriteLine("Asthma? " + Asthma_BOX.Text);
+                File1.WriteLine("Cancer? " + Cancer_BOX.Text);
+                File1.WriteLine("Food Allergy? " + Food_BOX.Text);
+                File1.WriteLine("Pet Allergy? " + Pet_BOX.Text);
+                File1.WriteLine("Diabetes? " + Diabetes_BOX.Text);
+                File1.WriteLine("Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text);
+                File1.Close();
+                MessageBox.Show("Thank You for your Particitipation!", "GoodBless", MessageBoxButtons.OK);
+                Application.Exit();
+            }
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
         {
@@ -176,6 +197,50 @@ namespace Contact_Tracing_App.Properties
             if (Class_BOX.Text == "")
                 Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
                 Class_BOX.ForeColor = Color.Gray;
+        }
+        private void Interaction_BOX_Click(object sender, EventArgs e)
+        {
+            Interaction_LBL.Visible = false;
+        }
+        private void Drug_BOX_Click(object sender, EventArgs e)
+        {
+            Drug_LBL.Visible = false;
+        }
+        private void Insect_BOX_Click(object sender, EventArgs e)
+        {
+            Insect_LBL.Visible = false;
+        }
+        private void Hypertension_BOX_Click(object sender, EventArgs e)
+        {
+            Hypertension_LBL.Visible = false;
+        }
+        private void Kidney_BOX_Click(object sender, EventArgs e)
+        {
+            Kidney_LBL.Visible = false;
+        }
+        private void Asthma_BOX_Click(object sender, EventArgs e)
+        {
+            Asthma_LBL.Visible = false;
+        }
+        private void Cancer_BOX_Click(object sender, EventArgs e)
+        {
+            Cancer_LBL.Visible = false;
+        }
+        private void Food_BOX_Click(object sender, EventArgs e)
+        {
+            Food_LBL.Visible = false;   
+        }
+        private void Pet_BOX_Click(object sender, EventArgs e)
+        {
+            Pet_LBL.Visible = false;
+        }
+        private void Diabetes_BOX_Click(object sender, EventArgs e)
+        {
+            Diabetes_LBL.Visible = false;
+        }
+        private void Diagnosed_BOX_Click(object sender, EventArgs e)
+        {
+            Diagnosed_LBL.Visible = false;
         }
     }
 }
