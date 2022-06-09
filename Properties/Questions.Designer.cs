@@ -38,10 +38,10 @@
             this.MiddleName_BOX = new System.Windows.Forms.TextBox();
             this.ExtName_BOX = new System.Windows.Forms.TextBox();
             this.ID_BOX = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.CivilStatus_BOX = new System.Windows.Forms.TextBox();
+            this.Birthday_BOX = new System.Windows.Forms.TextBox();
+            this.Gender_BOX = new System.Windows.Forms.TextBox();
+            this.Contact_BOX = new System.Windows.Forms.TextBox();
             this.HomeNumber_BOX = new System.Windows.Forms.TextBox();
             this.IDNumber_BOX = new System.Windows.Forms.TextBox();
             this.StreetName_BOX = new System.Windows.Forms.TextBox();
@@ -156,49 +156,51 @@
             this.ID_BOX.Enter += new System.EventHandler(this.ID_BOX_Enter);
             this.ID_BOX.Leave += new System.EventHandler(this.ID_BOX_Leave);
             // 
-            // textBox8
+            // CivilStatus_BOX
             // 
-            this.textBox8.BackColor = System.Drawing.Color.AliceBlue;
-            this.textBox8.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(811, 607);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(174, 30);
-            this.textBox8.TabIndex = 33;
-            this.textBox8.Text = "Civil Status";
+            this.CivilStatus_BOX.BackColor = System.Drawing.Color.AliceBlue;
+            this.CivilStatus_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CivilStatus_BOX.ForeColor = System.Drawing.Color.Black;
+            this.CivilStatus_BOX.Location = new System.Drawing.Point(811, 607);
+            this.CivilStatus_BOX.Name = "CivilStatus_BOX";
+            this.CivilStatus_BOX.Size = new System.Drawing.Size(174, 30);
+            this.CivilStatus_BOX.TabIndex = 33;
+            this.CivilStatus_BOX.Text = "Civil Status";
             // 
-            // textBox9
+            // Birthday_BOX
             // 
-            this.textBox9.BackColor = System.Drawing.Color.AliceBlue;
-            this.textBox9.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(567, 607);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(174, 30);
-            this.textBox9.TabIndex = 34;
-            this.textBox9.Text = "mm/dd/yyyy";
+            this.Birthday_BOX.BackColor = System.Drawing.Color.AliceBlue;
+            this.Birthday_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Birthday_BOX.ForeColor = System.Drawing.Color.Black;
+            this.Birthday_BOX.Location = new System.Drawing.Point(567, 607);
+            this.Birthday_BOX.Name = "Birthday_BOX";
+            this.Birthday_BOX.Size = new System.Drawing.Size(174, 30);
+            this.Birthday_BOX.TabIndex = 34;
+            this.Birthday_BOX.Text = "mm/dd/yyyy";
             // 
-            // textBox10
+            // Gender_BOX
             // 
-            this.textBox10.BackColor = System.Drawing.Color.AliceBlue;
-            this.textBox10.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(305, 607);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(174, 30);
-            this.textBox10.TabIndex = 35;
-            this.textBox10.Text = "Gender";
+            this.Gender_BOX.BackColor = System.Drawing.Color.AliceBlue;
+            this.Gender_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gender_BOX.ForeColor = System.Drawing.Color.Black;
+            this.Gender_BOX.Location = new System.Drawing.Point(305, 607);
+            this.Gender_BOX.Name = "Gender_BOX";
+            this.Gender_BOX.Size = new System.Drawing.Size(174, 30);
+            this.Gender_BOX.TabIndex = 35;
+            this.Gender_BOX.Text = "Gender";
             // 
-            // textBox11
+            // Contact_BOX
             // 
-            this.textBox11.BackColor = System.Drawing.Color.AliceBlue;
-            this.textBox11.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(36, 607);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(174, 30);
-            this.textBox11.TabIndex = 36;
-            this.textBox11.Text = "0945 167 5095";
+            this.Contact_BOX.BackColor = System.Drawing.Color.AliceBlue;
+            this.Contact_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Contact_BOX.ForeColor = System.Drawing.Color.Black;
+            this.Contact_BOX.Location = new System.Drawing.Point(36, 607);
+            this.Contact_BOX.Name = "Contact_BOX";
+            this.Contact_BOX.Size = new System.Drawing.Size(174, 30);
+            this.Contact_BOX.TabIndex = 36;
+            this.Contact_BOX.Text = "0945 167 5095";
+            this.Contact_BOX.Enter += new System.EventHandler(this.Contact_BOX_Enter);
+            this.Contact_BOX.Leave += new System.EventHandler(this.Contact_BOX_Leave);
             // 
             // HomeNumber_BOX
             // 
@@ -262,6 +264,8 @@
             this.ProvinceCity_BOX.Size = new System.Drawing.Size(260, 30);
             this.ProvinceCity_BOX.TabIndex = 42;
             this.ProvinceCity_BOX.Text = "Province/City";
+            this.ProvinceCity_BOX.Enter += new System.EventHandler(this.ProvinceCity_BOX_Enter);
+            this.ProvinceCity_BOX.Leave += new System.EventHandler(this.ProvinceCity_BOX_Leave);
             // 
             // Barangay_BOX
             // 
@@ -293,7 +297,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.New_Background1;
+            this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.New_Background2;
             this.ClientSize = new System.Drawing.Size(1014, 688);
             this.Controls.Add(this.Next_Button);
             this.Controls.Add(this.Barangay_BOX);
@@ -302,10 +306,10 @@
             this.Controls.Add(this.StreetName_BOX);
             this.Controls.Add(this.IDNumber_BOX);
             this.Controls.Add(this.HomeNumber_BOX);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.Contact_BOX);
+            this.Controls.Add(this.Gender_BOX);
+            this.Controls.Add(this.Birthday_BOX);
+            this.Controls.Add(this.CivilStatus_BOX);
             this.Controls.Add(this.ID_BOX);
             this.Controls.Add(this.ExtName_BOX);
             this.Controls.Add(this.MiddleName_BOX);
@@ -333,10 +337,10 @@
         private TextBox MiddleName_BOX;
         private TextBox ExtName_BOX;
         private TextBox ID_BOX;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
+        private TextBox CivilStatus_BOX;
+        private TextBox Birthday_BOX;
+        private TextBox Gender_BOX;
+        private TextBox Contact_BOX;
         private TextBox HomeNumber_BOX;
         private TextBox IDNumber_BOX;
         private TextBox StreetName_BOX;

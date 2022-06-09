@@ -41,6 +41,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("Home Number : " + HomeNumber_BOX.Text);
             File.WriteLine("Street Name : " + StreetName_BOX.Text);
             File.WriteLine("Municipality : " + Municipality_BOX.Text);
+            File.WriteLine("Contact : " + Contact_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -61,14 +62,12 @@ namespace Contact_Tracing_App.Properties
                 MiddleName_BOX.Text = "";
                 MiddleName_BOX.ForeColor = Color.Black;
         }
-
         private void MiddleName_BOX_Leave(object sender, EventArgs e)
         {
             if (MiddleName_BOX.Text == "")
                 MiddleName_BOX.Text = "Middle Name";
                 MiddleName_BOX.ForeColor = Color.Gray;
         }
-
         private void ExtName_BOX_Enter(object sender, EventArgs e)
         {
             if (ExtName_BOX.Text == "Ext. Name")
@@ -81,7 +80,6 @@ namespace Contact_Tracing_App.Properties
                 ExtName_BOX.Text = "Ext. Name";
                 ExtName_BOX.ForeColor = Color.Gray;
         }
-
         private void ID_BOX_Enter(object sender, EventArgs e)
         {
             if (ID_BOX.Text == "ID")
@@ -94,7 +92,6 @@ namespace Contact_Tracing_App.Properties
                ID_BOX.Text = "ID";
                ID_BOX.ForeColor = Color.Gray;
         }
-
         private void IDNumber_BOX_Enter(object sender, EventArgs e)
         {
             if (IDNumber_BOX.Text == "ID Number")
@@ -107,7 +104,6 @@ namespace Contact_Tracing_App.Properties
                 IDNumber_BOX.Text = "ID Number";
                 IDNumber_BOX.ForeColor = Color.Gray;
         }
-
         private void HomeNumber_BOX_Enter(object sender, EventArgs e)
         {
             if (HomeNumber_BOX.Text == "Home Number")
@@ -120,7 +116,6 @@ namespace Contact_Tracing_App.Properties
                 HomeNumber_BOX.Text = "Home Number";
                 HomeNumber_BOX.ForeColor = Color.Gray;
         }
-
         private void StreetName_BOX_Enter(object sender, EventArgs e)
         {
             if (StreetName_BOX.Text == "Street Name")
@@ -133,7 +128,6 @@ namespace Contact_Tracing_App.Properties
                 StreetName_BOX.Text = "Street Name";
                 StreetName_BOX.ForeColor = Color.Gray;
         }
-
         private void Barangay_BOX_Enter(object sender, EventArgs e)
         {
             if (Barangay_BOX.Text == "Barangay")
@@ -146,7 +140,6 @@ namespace Contact_Tracing_App.Properties
                 Barangay_BOX.Text = "Barangay";
                 Barangay_BOX.ForeColor = Color.Gray;
         }
-
         private void Municipality_BOX_Enter(object sender, EventArgs e)
         {
             if (Municipality_BOX.Text == "Municipality")
@@ -158,6 +151,30 @@ namespace Contact_Tracing_App.Properties
             if (Municipality_BOX.Text == "")
                 Municipality_BOX.Text = "Municipality";
                 Municipality_BOX.ForeColor = Color.Gray;
+        }
+        private void ProvinceCity_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Municipality_BOX.Text == "Municipality")
+                Municipality_BOX.Text = "";
+                Municipality_BOX.ForeColor = Color.Black;
+        }
+        private void ProvinceCity_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Municipality_BOX.Text == "")
+                Municipality_BOX.Text = "Municipality";
+                Municipality_BOX.ForeColor = Color.Gray;
+        }
+        private void Contact_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Contact_BOX.Text == "Contact")
+                Contact_BOX.Text = "";
+                Contact_BOX.ForeColor = Color.Black;
+        }
+        private void Contact_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Contact_BOX.Text == "")
+                Contact_BOX.Text = "Contact";
+                Contact_BOX.ForeColor = Color.Gray;
         }
     }
 }
