@@ -249,6 +249,8 @@
             this.Municipality_BOX.Size = new System.Drawing.Size(260, 30);
             this.Municipality_BOX.TabIndex = 41;
             this.Municipality_BOX.Text = "Municipality";
+            this.Municipality_BOX.Enter += new System.EventHandler(this.Municipality_BOX_Enter);
+            this.Municipality_BOX.Leave += new System.EventHandler(this.Municipality_BOX_Leave);
             // 
             // ProvinceCity_BOX
             // 

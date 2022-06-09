@@ -40,7 +40,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("ID Number : " + IDNumber_BOX.Text);
             File.WriteLine("Home Number : " + HomeNumber_BOX.Text);
             File.WriteLine("Street Name : " + StreetName_BOX.Text);
-            File.WriteLine("Barangay : " + StreetName_BOX.Text);
+            File.WriteLine("Municipality : " + Municipality_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -145,6 +145,19 @@ namespace Contact_Tracing_App.Properties
             if (Barangay_BOX.Text == "")
                 Barangay_BOX.Text = "Barangay";
                 Barangay_BOX.ForeColor = Color.Gray;
+        }
+
+        private void Municipality_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Municipality_BOX.Text == "Municipality")
+                Municipality_BOX.Text = "";
+                Municipality_BOX.ForeColor = Color.Black;
+        }
+        private void Municipality_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Municipality_BOX.Text == "")
+                Municipality_BOX.Text = "Municipality";
+                Municipality_BOX.ForeColor = Color.Gray;
         }
     }
 }
