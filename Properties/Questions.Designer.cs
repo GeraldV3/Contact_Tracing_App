@@ -49,6 +49,7 @@
             this.ProvinceCity_BOX = new System.Windows.Forms.TextBox();
             this.Barangay_BOX = new System.Windows.Forms.TextBox();
             this.Next_Button = new System.Windows.Forms.Button();
+            this.OnlyBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label10
@@ -140,6 +141,8 @@
             this.ExtName_BOX.Size = new System.Drawing.Size(174, 30);
             this.ExtName_BOX.TabIndex = 29;
             this.ExtName_BOX.Text = "Ext. Name";
+            this.ExtName_BOX.Enter += new System.EventHandler(this.ExtName_BOX_Enter);
+            this.ExtName_BOX.Leave += new System.EventHandler(this.ExtName_BOX_Leave);
             // 
             // ID_BOX
             // 
@@ -274,6 +277,15 @@
             this.Next_Button.UseVisualStyleBackColor = false;
             this.Next_Button.Click += new System.EventHandler(this.Next_Button_Click);
             // 
+            // OnlyBox
+            // 
+            this.OnlyBox.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.OnlyBox.Location = new System.Drawing.Point(94, 94);
+            this.OnlyBox.Name = "OnlyBox";
+            this.OnlyBox.Size = new System.Drawing.Size(38, 23);
+            this.OnlyBox.TabIndex = 50;
+            this.OnlyBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Questions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -281,6 +293,7 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.New_Background1;
             this.ClientSize = new System.Drawing.Size(1014, 688);
+            this.Controls.Add(this.OnlyBox);
             this.Controls.Add(this.Next_Button);
             this.Controls.Add(this.Barangay_BOX);
             this.Controls.Add(this.ProvinceCity_BOX);
@@ -330,5 +343,6 @@
         private TextBox ProvinceCity_BOX;
         private TextBox Barangay_BOX;
         private Button Next_Button;
+        private TextBox OnlyBox;
     }
 }
