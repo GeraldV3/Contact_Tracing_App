@@ -91,6 +91,8 @@
             this.Insect_BOX.Size = new System.Drawing.Size(145, 30);
             this.Insect_BOX.TabIndex = 30;
             this.Insect_BOX.Text = "Insect Allergy?";
+            this.Insect_BOX.Enter += new System.EventHandler(this.Insect_BOX_Enter);
+            this.Insect_BOX.Leave += new System.EventHandler(this.Insect_BOX_Leave);
             // 
             // Hyertension_BOX
             // 

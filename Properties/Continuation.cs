@@ -22,6 +22,7 @@ namespace Contact_Tracing_App.Properties
             StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\Hello.txt", true);
             File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
             File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
+            File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -47,6 +48,18 @@ namespace Contact_Tracing_App.Properties
             if (Drug_BOX.Text == "")
                 Drug_BOX.Text = "Drug Allergy?";
                 Drug_BOX.ForeColor = Color.Gray;
+        }
+        private void Insect_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Insect_BOX.Text == "Kidney Disease?")
+                Insect_BOX.Text = "";
+                Insect_BOX.ForeColor = Color.Black;
+        }
+        private void Insect_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Insect_BOX.Text == "")
+                Insect_BOX.Text = "Kidney Disease?";
+                Insect_BOX.ForeColor = Color.Gray;
         }
     }
 }
