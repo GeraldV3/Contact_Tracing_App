@@ -50,7 +50,7 @@ namespace Contact_Tracing_App.Properties
                 File1.WriteLine("Diabetes? " + Diabetes_BOX.Text);
                 File1.WriteLine("Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text);
                 File1.Close();
-                MessageBox.Show("Thank You for your Particitipation!", "GoodBless", MessageBoxButtons.OK);
+                MessageBox.Show("Thank You for your Particitipation!", "GodBless", MessageBoxButtons.OK);
                 Application.Exit();
             }
         }

@@ -12,7 +12,6 @@ namespace Contact_Tracing_App
             Hide();
             Questions Main = new Questions();
             Main.ShowDialog();
-            Show();
         }
     }
 }
