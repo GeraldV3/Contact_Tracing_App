@@ -38,6 +38,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("Ext. Name : " + ExtName_BOX.Text);
             File.WriteLine("ID : " + ID_BOX.Text);
             File.WriteLine("ID Number : " + IDNumber_BOX.Text);
+            File.WriteLine("Home Number : " + HomeNumber_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
