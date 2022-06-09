@@ -23,6 +23,7 @@ namespace Contact_Tracing_App.Properties
             File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
             File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
             File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
+            File1.WriteLine("Hypertension? " + Hypertension_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -51,15 +52,27 @@ namespace Contact_Tracing_App.Properties
         }
         private void Insect_BOX_Enter(object sender, EventArgs e)
         {
-            if (Insect_BOX.Text == "Kidney Disease?")
+            if (Insect_BOX.Text == "Insect Allergy?")
                 Insect_BOX.Text = "";
                 Insect_BOX.ForeColor = Color.Black;
         }
         private void Insect_BOX_Leave(object sender, EventArgs e)
         {
             if (Insect_BOX.Text == "")
-                Insect_BOX.Text = "Kidney Disease?";
+                Insect_BOX.Text = "Insect Allergy?";
                 Insect_BOX.ForeColor = Color.Gray;
+        }
+        private void Hypertension_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Hypertension_BOX.Text == "Hypertension?")
+                Hypertension_BOX.Text = "";
+                Hypertension_BOX.ForeColor = Color.Black;
+        }
+        private void Hypertension_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Hypertension_BOX.Text == "")
+                Hypertension_BOX.Text = "Hypertension?";
+                Hypertension_BOX.ForeColor = Color.Gray;
         }
     }
 }

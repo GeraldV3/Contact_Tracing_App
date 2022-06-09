@@ -101,6 +101,7 @@
             this.LastName_BOX.Size = new System.Drawing.Size(174, 30);
             this.LastName_BOX.TabIndex = 26;
             this.LastName_BOX.Text = "Last Name";
+            this.LastName_BOX.TextChanged += new System.EventHandler(this.LastName_BOX_TextChanged);
             this.LastName_BOX.Enter += new System.EventHandler(this.LastName_BOX_Enter);
             this.LastName_BOX.Leave += new System.EventHandler(this.LastName_BOX_Leave);
             // 

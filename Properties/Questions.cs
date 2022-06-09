@@ -220,6 +220,11 @@ namespace Contact_Tracing_App.Properties
                 CivilStatus_BOX.Text = "Civil Status";
                 CivilStatus_BOX.ForeColor = Color.Gray;
         }
+
+        private void LastName_BOX_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

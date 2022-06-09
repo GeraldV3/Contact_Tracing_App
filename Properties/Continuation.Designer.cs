@@ -33,7 +33,7 @@
             this.Drug_BOX = new System.Windows.Forms.TextBox();
             this.Diabetes_BOX = new System.Windows.Forms.TextBox();
             this.Insect_BOX = new System.Windows.Forms.TextBox();
-            this.Hyertension_BOX = new System.Windows.Forms.TextBox();
+            this.Hypertension_BOX = new System.Windows.Forms.TextBox();
             this.Kidney_BOX = new System.Windows.Forms.TextBox();
             this.Asthma_BOX = new System.Windows.Forms.TextBox();
             this.Cancer_BOX = new System.Windows.Forms.TextBox();
@@ -94,16 +94,18 @@
             this.Insect_BOX.Enter += new System.EventHandler(this.Insect_BOX_Enter);
             this.Insect_BOX.Leave += new System.EventHandler(this.Insect_BOX_Leave);
             // 
-            // Hyertension_BOX
+            // Hypertension_BOX
             // 
-            this.Hyertension_BOX.BackColor = System.Drawing.Color.AliceBlue;
-            this.Hyertension_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Hyertension_BOX.ForeColor = System.Drawing.Color.Black;
-            this.Hyertension_BOX.Location = new System.Drawing.Point(54, 351);
-            this.Hyertension_BOX.Name = "Hyertension_BOX";
-            this.Hyertension_BOX.Size = new System.Drawing.Size(145, 30);
-            this.Hyertension_BOX.TabIndex = 31;
-            this.Hyertension_BOX.Text = "Hypertension?";
+            this.Hypertension_BOX.BackColor = System.Drawing.Color.AliceBlue;
+            this.Hypertension_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Hypertension_BOX.ForeColor = System.Drawing.Color.Black;
+            this.Hypertension_BOX.Location = new System.Drawing.Point(54, 351);
+            this.Hypertension_BOX.Name = "Hypertension_BOX";
+            this.Hypertension_BOX.Size = new System.Drawing.Size(145, 30);
+            this.Hypertension_BOX.TabIndex = 31;
+            this.Hypertension_BOX.Text = "Hypertension?";
+            this.Hypertension_BOX.Enter += new System.EventHandler(this.Hypertension_BOX_Enter);
+            this.Hypertension_BOX.Leave += new System.EventHandler(this.Hypertension_BOX_Leave);
             // 
             // Kidney_BOX
             // 
@@ -207,7 +209,7 @@
             this.Controls.Add(this.Cancer_BOX);
             this.Controls.Add(this.Asthma_BOX);
             this.Controls.Add(this.Kidney_BOX);
-            this.Controls.Add(this.Hyertension_BOX);
+            this.Controls.Add(this.Hypertension_BOX);
             this.Controls.Add(this.Insect_BOX);
             this.Controls.Add(this.Diabetes_BOX);
             this.Controls.Add(this.Drug_BOX);
@@ -226,7 +228,7 @@
         private TextBox Drug_BOX;
         private TextBox Diabetes_BOX;
         private TextBox Insect_BOX;
-        private TextBox Hyertension_BOX;
+        private TextBox Hypertension_BOX;
         private TextBox Kidney_BOX;
         private TextBox Asthma_BOX;
         private TextBox Cancer_BOX;
