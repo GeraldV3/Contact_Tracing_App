@@ -210,6 +210,8 @@
             this.HomeNumber_BOX.Size = new System.Drawing.Size(260, 30);
             this.HomeNumber_BOX.TabIndex = 37;
             this.HomeNumber_BOX.Text = "Home Number";
+            this.HomeNumber_BOX.Enter += new System.EventHandler(this.HomeNumber_BOX_Enter);
+            this.HomeNumber_BOX.Leave += new System.EventHandler(this.HomeNumber_BOX_Leave);
             // 
             // IDNumber_BOX
             // 
@@ -221,6 +223,8 @@
             this.IDNumber_BOX.Size = new System.Drawing.Size(174, 30);
             this.IDNumber_BOX.TabIndex = 38;
             this.IDNumber_BOX.Text = "ID Number";
+            this.IDNumber_BOX.Enter += new System.EventHandler(this.IDNumber_BOX_Enter);
+            this.IDNumber_BOX.Leave += new System.EventHandler(this.IDNumber_BOX_Leave);
             // 
             // StreetName_BOX
             // 

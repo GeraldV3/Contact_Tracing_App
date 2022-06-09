@@ -37,6 +37,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("Middle Name : " + MiddleName_BOX.Text);
             File.WriteLine("Ext. Name : " + ExtName_BOX.Text);
             File.WriteLine("ID : " + ID_BOX.Text);
+            File.WriteLine("ID Number : " + IDNumber_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -89,6 +90,32 @@ namespace Contact_Tracing_App.Properties
            if (ID_BOX.Text == "")
                ID_BOX.Text = "ID";
                ID_BOX.ForeColor = Color.Gray;
+        }
+
+        private void IDNumber_BOX_Enter(object sender, EventArgs e)
+        {
+            if (IDNumber_BOX.Text == "ID Number")
+                IDNumber_BOX.Text = "";
+                IDNumber_BOX.ForeColor = Color.Black;
+        }
+        private void IDNumber_BOX_Leave(object sender, EventArgs e)
+        {
+            if (IDNumber_BOX.Text == "")
+                IDNumber_BOX.Text = "ID Number";
+                IDNumber_BOX.ForeColor = Color.Gray;
+        }
+
+        private void HomeNumber_BOX_Enter(object sender, EventArgs e)
+        {
+            if (HomeNumber_BOX.Text == "Home Number")
+                HomeNumber_BOX.Text = "";
+                HomeNumber_BOX.ForeColor = Color.Black;
+        }
+        private void HomeNumber_BOX_Leave(object sender, EventArgs e)
+        {
+            if (HomeNumber_BOX.Text == "")
+                HomeNumber_BOX.Text = "Home Number";
+                HomeNumber_BOX.ForeColor = Color.Gray;
         }
     }
 }
