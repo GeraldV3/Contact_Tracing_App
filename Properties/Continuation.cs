@@ -29,6 +29,7 @@ namespace Contact_Tracing_App.Properties
             File1.WriteLine("Cancer? " + Cancer_BOX.Text);
             File1.WriteLine("Food Allergy? " + Food_BOX.Text);
             File1.WriteLine("Pet Allergy? " + Pet_BOX.Text);
+            File1.WriteLine("Diabetes? " + Diabetes_BOX.Text);
             File1.Close();
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -141,11 +142,15 @@ namespace Contact_Tracing_App.Properties
         }
         private void Diabetes_BOX_Enter(object sender, EventArgs e)
         {
-
+            if (Diabetes_BOX.Text == "Diabetes?")
+                Diabetes_BOX.Text = "";
+                Diabetes_BOX.ForeColor = Color.Black;
         }
         private void Diabetes_BOX_Leave(object sender, EventArgs e)
         {
-
+            if (Diabetes_BOX.Text == "")
+                Diabetes_BOX.Text = "Diabetes?";
+                Diabetes_BOX.ForeColor = Color.Gray;
         }
         private void Diagnosed_BOX_Enter(object sender, EventArgs e)
         {
