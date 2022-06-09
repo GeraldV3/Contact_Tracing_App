@@ -42,6 +42,7 @@ namespace Contact_Tracing_App.Properties
             File.WriteLine("Street Name : " + StreetName_BOX.Text);
             File.WriteLine("Municipality : " + Municipality_BOX.Text);
             File.WriteLine("Contact : " + Contact_BOX.Text);
+            File.WriteLine("Gender : " + Gender_BOX.Text);
             File.Close();
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -154,27 +155,39 @@ namespace Contact_Tracing_App.Properties
         }
         private void ProvinceCity_BOX_Enter(object sender, EventArgs e)
         {
-            if (Municipality_BOX.Text == "Municipality")
-                Municipality_BOX.Text = "";
-                Municipality_BOX.ForeColor = Color.Black;
+            if (ProvinceCity_BOX.Text == "Province/City")
+                ProvinceCity_BOX.Text = "";
+                ProvinceCity_BOX.ForeColor = Color.Black;
         }
         private void ProvinceCity_BOX_Leave(object sender, EventArgs e)
         {
-            if (Municipality_BOX.Text == "")
-                Municipality_BOX.Text = "Municipality";
-                Municipality_BOX.ForeColor = Color.Gray;
+            if (ProvinceCity_BOX.Text == "")
+                ProvinceCity_BOX.Text = "Province/City";
+                ProvinceCity_BOX.ForeColor = Color.Gray;
         }
         private void Contact_BOX_Enter(object sender, EventArgs e)
         {
-            if (Contact_BOX.Text == "Contact")
+            if (Contact_BOX.Text == "0945 167 5095")
                 Contact_BOX.Text = "";
                 Contact_BOX.ForeColor = Color.Black;
         }
         private void Contact_BOX_Leave(object sender, EventArgs e)
         {
             if (Contact_BOX.Text == "")
-                Contact_BOX.Text = "Contact";
+                Contact_BOX.Text = "0945 167 5095";
                 Contact_BOX.ForeColor = Color.Gray;
+        }
+        private void Gender_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Gender_BOX.Text == "Gender")
+                Gender_BOX.Text = "";
+                Gender_BOX.ForeColor = Color.Black;
+        }
+        private void Gender_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Gender_BOX.Text == "")
+                Gender_BOX.Text = "Gender";
+                Gender_BOX.ForeColor = Color.Gray;
         }
     }
 }

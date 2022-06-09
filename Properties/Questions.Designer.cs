@@ -188,6 +188,8 @@
             this.Gender_BOX.Size = new System.Drawing.Size(174, 30);
             this.Gender_BOX.TabIndex = 35;
             this.Gender_BOX.Text = "Gender";
+            this.Gender_BOX.Enter += new System.EventHandler(this.Gender_BOX_Enter);
+            this.Gender_BOX.Leave += new System.EventHandler(this.Gender_BOX_Leave);
             // 
             // Contact_BOX
             // 
