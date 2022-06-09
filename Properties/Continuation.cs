@@ -167,9 +167,15 @@ namespace Contact_Tracing_App.Properties
         }
         private void Class_BOX_Enter(object sender, EventArgs e)
         {
+            if (Class_BOX.Text == "Asymptomatic, Mild, Moderate, Severe, Critical, None")
+                Class_BOX.Text = "";
+                Class_BOX.ForeColor = Color.Black;
         }
         private void Class_BOX_Leave(object sender, EventArgs e)
         {
+            if (Class_BOX.Text == "")
+                Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
+                Class_BOX.ForeColor = Color.Gray;
         }
     }
 }
