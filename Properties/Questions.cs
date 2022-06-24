@@ -53,7 +53,7 @@ namespace Contact_Tracing_App.Properties
             }    
             else
             {
-                StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\Contract Tracing File\Info.txt", true);
+                StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt", true);
                 File.WriteLine("Last Name : " + LastName_BOX.Text);
                 File.WriteLine("First Name : " + FirstName_BOX.Text);
                 File.WriteLine("Middle Name : " + MiddleName_BOX.Text);

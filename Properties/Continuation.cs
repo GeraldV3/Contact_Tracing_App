@@ -37,7 +37,7 @@ namespace Contact_Tracing_App.Properties
             }
           else
             {
-                StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\Contract Tracing File\Info.txt", true);
+                StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt", true);
                 File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
                 File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
                 File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
@@ -51,7 +51,6 @@ namespace Contact_Tracing_App.Properties
                 File1.WriteLine("Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text);
                 File1.Close();
                 MessageBox.Show("Thank You for your Particitipation!", "GodBless", MessageBoxButtons.OK);
-                Application.Exit();
             }
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)

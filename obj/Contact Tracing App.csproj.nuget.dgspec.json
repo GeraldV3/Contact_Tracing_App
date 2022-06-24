@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\Desktop\\Contact Tracing App\\Contact Tracing App.csproj": {}
+    "C:\\Users\\pc\\Desktop\\OOP\\Contact Tracing App\\Contact Tracing App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\Desktop\\Contact Tracing App\\Contact Tracing App.csproj": {
+    "C:\\Users\\pc\\Desktop\\OOP\\Contact Tracing App\\Contact Tracing App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\Desktop\\Contact Tracing App\\Contact Tracing App.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Desktop\\OOP\\Contact Tracing App\\Contact Tracing App.csproj",
         "projectName": "Contact Tracing App",
-        "projectPath": "C:\\Users\\pc\\Desktop\\Contact Tracing App\\Contact Tracing App.csproj",
+        "projectPath": "C:\\Users\\pc\\Desktop\\OOP\\Contact Tracing App\\Contact Tracing App.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\Desktop\\Contact Tracing App\\obj\\",
+        "outputPath": "C:\\Users\\pc\\Desktop\\OOP\\Contact Tracing App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
