@@ -38,7 +38,7 @@ namespace Contact_Tracing_App.Properties
             }
           else
             {
-                StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt", true);
+                StreamWriter File1 = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\.txt", true);
                 File1.WriteLine("Directly Interaction with Covid patient? " + Interaction_BOX.Text);
                 File1.WriteLine("Drug Allergy? " + Drug_BOX.Text);
                 File1.WriteLine("Insect Allergy? " + Insect_BOX.Text);
@@ -246,14 +246,14 @@ namespace Contact_Tracing_App.Properties
         }
         private void DATE_BOX_Enter(object sender, EventArgs e)
         {
-         if(DATE_BOX.Text == "dd/mm/yy")
+         if(DATE_BOX.Text == "mm/dd/yy")
             DATE_BOX.Text = "";
             DATE_BOX.ForeColor = Color.Black;
         }
         private void DATE_BOX_Leave(object sender, EventArgs e)
         {
           if(DATE_BOX.Text == "")
-            DATE_BOX.Text = "dd/mm/yy";
+            DATE_BOX.Text = "mm/dd/yy";
             DATE_BOX.ForeColor = Color.Gray;
         }
         private void DATE_BOX_Click(object sender, EventArgs e)

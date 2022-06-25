@@ -62,6 +62,7 @@
             // 
             // Username_TxtBOX
             // 
+            this.Username_TxtBOX.BackColor = System.Drawing.Color.White;
             this.Username_TxtBOX.Location = new System.Drawing.Point(119, 398);
             this.Username_TxtBOX.Name = "Username_TxtBOX";
             this.Username_TxtBOX.Size = new System.Drawing.Size(145, 23);
@@ -72,6 +73,7 @@
             // 
             // Password_TxtBOX
             // 
+            this.Password_TxtBOX.BackColor = System.Drawing.Color.White;
             this.Password_TxtBOX.Location = new System.Drawing.Point(119, 440);
             this.Password_TxtBOX.Name = "Password_TxtBOX";
             this.Password_TxtBOX.Size = new System.Drawing.Size(145, 23);

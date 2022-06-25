@@ -378,7 +378,7 @@
             this.DATE_LBL.Name = "DATE_LBL";
             this.DATE_LBL.Size = new System.Drawing.Size(102, 22);
             this.DATE_LBL.TabIndex = 82;
-            this.DATE_LBL.Text = "dd/mm/yy";
+            this.DATE_LBL.Text = "mm/dd/yy";
             // 
             // Continuation
             // 

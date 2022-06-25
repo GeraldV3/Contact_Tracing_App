@@ -56,7 +56,6 @@ namespace Contact_Tracing_App
             {
                 MessageBox.Show("Try Again!"); 
             }
-
         }
     }
 }

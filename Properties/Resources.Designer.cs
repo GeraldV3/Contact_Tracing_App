@@ -83,6 +83,36 @@ namespace Contact_Tracing_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ADMIN_Background1 {
+            get {
+                object obj = ResourceManager.GetObject("ADMIN Background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ALLDATA {
+            get {
+                object obj = ResourceManager.GetObject("ALLDATA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ALLDATA1 {
+            get {
+                object obj = ResourceManager.GetObject("ALLDATA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background {
             get {
                 object obj = ResourceManager.GetObject("Background", resourceCulture);
@@ -176,6 +206,16 @@ namespace Contact_Tracing_App.Properties {
         internal static System.Drawing.Bitmap New_Background2 {
             get {
                 object obj = ResourceManager.GetObject("New Background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewClick {
+            get {
+                object obj = ResourceManager.GetObject("NewClick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

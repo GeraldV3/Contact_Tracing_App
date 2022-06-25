@@ -16,10 +16,10 @@ namespace Contact_Tracing_App.Properties
         {
             InitializeComponent();
         }
-
-        private void ClickHere_BTN_Click(object sender, EventArgs e)
+        private void ShowAll_PBOX_Click(object sender, EventArgs e)
         {
-
+            AllData DATA = new AllData();
+            DATA.ShowDialog();
         }
     }
 }

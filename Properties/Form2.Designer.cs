@@ -29,38 +29,65 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ADMIN));
-            this.ClickHere_BTN = new System.Windows.Forms.Button();
+            this.DATE = new System.Windows.Forms.DateTimePicker();
+            this.ShowAll_PBOX = new System.Windows.Forms.PictureBox();
+            this.FilterRecord_PBOX = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowAll_PBOX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FilterRecord_PBOX)).BeginInit();
             this.SuspendLayout();
             // 
-            // ClickHere_BTN
+            // DATE
             // 
-            this.ClickHere_BTN.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClickHere_BTN.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.CLICK_HERE1;
-            this.ClickHere_BTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClickHere_BTN.Location = new System.Drawing.Point(351, 234);
-            this.ClickHere_BTN.Name = "ClickHere_BTN";
-            this.ClickHere_BTN.Size = new System.Drawing.Size(378, 140);
-            this.ClickHere_BTN.TabIndex = 1;
-            this.ClickHere_BTN.UseVisualStyleBackColor = false;
-            this.ClickHere_BTN.Click += new System.EventHandler(this.ClickHere_BTN_Click);
+            this.DATE.CalendarFont = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DATE.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DATE.Location = new System.Drawing.Point(543, 325);
+            this.DATE.Name = "DATE";
+            this.DATE.Size = new System.Drawing.Size(80, 23);
+            this.DATE.TabIndex = 2;
+            // 
+            // ShowAll_PBOX
+            // 
+            this.ShowAll_PBOX.Image = global::Contact_Tracing_App.Properties.Resources.CLICK_HERE1;
+            this.ShowAll_PBOX.Location = new System.Drawing.Point(418, 143);
+            this.ShowAll_PBOX.Name = "ShowAll_PBOX";
+            this.ShowAll_PBOX.Size = new System.Drawing.Size(322, 96);
+            this.ShowAll_PBOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ShowAll_PBOX.TabIndex = 4;
+            this.ShowAll_PBOX.TabStop = false;
+            this.ShowAll_PBOX.Click += new System.EventHandler(this.ShowAll_PBOX_Click);
+            // 
+            // FilterRecord_PBOX
+            // 
+            this.FilterRecord_PBOX.Image = global::Contact_Tracing_App.Properties.Resources.CLICK_HERE1;
+            this.FilterRecord_PBOX.Location = new System.Drawing.Point(463, 364);
+            this.FilterRecord_PBOX.Name = "FilterRecord_PBOX";
+            this.FilterRecord_PBOX.Size = new System.Drawing.Size(229, 64);
+            this.FilterRecord_PBOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FilterRecord_PBOX.TabIndex = 5;
+            this.FilterRecord_PBOX.TabStop = false;
             // 
             // ADMIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ADMIN_Background;
+            this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ADMIN_Background1;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ClickHere_BTN);
+            this.Controls.Add(this.FilterRecord_PBOX);
+            this.Controls.Add(this.ShowAll_PBOX);
+            this.Controls.Add(this.DATE);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ADMIN";
             this.Text = "ADMIN";
+            ((System.ComponentModel.ISupportInitialize)(this.ShowAll_PBOX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FilterRecord_PBOX)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Button ClickHere_BTN;
+        private DateTimePicker DATE;
+        private PictureBox ShowAll_PBOX;
+        private PictureBox FilterRecord_PBOX;
     }
 }
