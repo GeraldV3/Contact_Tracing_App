@@ -53,6 +53,10 @@
             this.Drug_LBL = new System.Windows.Forms.Label();
             this.Diagnosed_LBL = new System.Windows.Forms.Label();
             this.Pet_LBL = new System.Windows.Forms.Label();
+            this.DATE_BOX = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DATE_LBL = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Interaction_BOX
@@ -342,6 +346,40 @@
             this.Pet_LBL.TabIndex = 79;
             this.Pet_LBL.Text = "Pet Allergy";
             // 
+            // DATE_BOX
+            // 
+            this.DATE_BOX.BackColor = System.Drawing.Color.AliceBlue;
+            this.DATE_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DATE_BOX.ForeColor = System.Drawing.Color.Black;
+            this.DATE_BOX.Location = new System.Drawing.Point(820, 607);
+            this.DATE_BOX.Name = "DATE_BOX";
+            this.DATE_BOX.Size = new System.Drawing.Size(151, 30);
+            this.DATE_BOX.TabIndex = 80;
+            this.DATE_BOX.Click += new System.EventHandler(this.DATE_BOX_Click);
+            this.DATE_BOX.Enter += new System.EventHandler(this.DATE_BOX_Enter);
+            this.DATE_BOX.Leave += new System.EventHandler(this.DATE_BOX_Leave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Contact_Tracing_App.Properties.Resources.DATE;
+            this.pictureBox1.Location = new System.Drawing.Point(663, 602);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 81;
+            this.pictureBox1.TabStop = false;
+            // 
+            // DATE_LBL
+            // 
+            this.DATE_LBL.AutoSize = true;
+            this.DATE_LBL.BackColor = System.Drawing.Color.AliceBlue;
+            this.DATE_LBL.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DATE_LBL.Location = new System.Drawing.Point(821, 611);
+            this.DATE_LBL.Name = "DATE_LBL";
+            this.DATE_LBL.Size = new System.Drawing.Size(102, 22);
+            this.DATE_LBL.TabIndex = 82;
+            this.DATE_LBL.Text = "dd/mm/yy";
+            // 
             // Continuation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -349,6 +387,9 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.Continuation4;
             this.ClientSize = new System.Drawing.Size(1014, 718);
+            this.Controls.Add(this.DATE_LBL);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.DATE_BOX);
             this.Controls.Add(this.Pet_LBL);
             this.Controls.Add(this.Diagnosed_LBL);
             this.Controls.Add(this.Drug_LBL);
@@ -376,6 +417,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Continuation";
             this.Text = "Continuation";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,5 +449,8 @@
         private Label Drug_LBL;
         private Label Diagnosed_LBL;
         private Label Pet_LBL;
+        private TextBox DATE_BOX;
+        private PictureBox pictureBox1;
+        private Label DATE_LBL;
     }
 }

@@ -13,5 +13,50 @@ namespace Contact_Tracing_App
             Questions Main = new Questions();
             Main.ShowDialog();
         }
+        private void Username_TxtBOX_Enter(object sender, EventArgs e)
+        {
+            if (Username_TxtBOX.Text == "Username")
+                Username_TxtBOX.Text = "";
+                Username_TxtBOX.ForeColor = Color.Black;
+
+        }
+        private void Username_TxtBOX_Leave(object sender, EventArgs e)
+        {
+            if (Username_TxtBOX.Text == "")
+                Username_TxtBOX.Text = "Username";
+                Username_TxtBOX.ForeColor = Color.Gray;
+
+        }
+        private void Password_TxtBOX_Enter(object sender, EventArgs e)
+        {
+            if (Password_TxtBOX.Text == "Password")
+                Password_TxtBOX.Text = "";
+                Password_TxtBOX.ForeColor = Color.Black;
+        }
+        private void Password_TxtBOX_Leave(object sender, EventArgs e)
+        {
+            if (Password_TxtBOX.Text == "")
+                Password_TxtBOX.Text = "Password";
+                Password_TxtBOX.ForeColor = Color.Gray;
+        }
+        private void AccesstoMain_BTN_Click(object sender, EventArgs e)
+        {
+
+            string username, password;
+            username = Username_TxtBOX.Text;
+            password = Password_TxtBOX.Text;
+            if (username == "Gerald" && password == "Lopez")
+            {
+                MessageBox.Show("Thank You ADMIN!");
+                Hide();
+                ADMIN ADMIN = new ADMIN();
+                ADMIN.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Try Again!"); 
+            }
+
+        }
     }
 }

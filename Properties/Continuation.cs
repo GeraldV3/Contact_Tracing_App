@@ -26,7 +26,8 @@ namespace Contact_Tracing_App.Properties
             Food_LBL.Visible= true;
             Pet_LBL.Visible = true; 
             Diabetes_LBL.Visible = true;    
-            Diagnosed_LBL.Visible = true;   
+            Diagnosed_LBL.Visible = true;
+            DATE_LBL.Visible = true;
         }
         private void Submet_BTN_Click(object sender, EventArgs e)
         {
@@ -49,8 +50,10 @@ namespace Contact_Tracing_App.Properties
                 File1.WriteLine("Pet Allergy? " + Pet_BOX.Text);
                 File1.WriteLine("Diabetes? " + Diabetes_BOX.Text);
                 File1.WriteLine("Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text);
+                File1.WriteLine("DATE: " + DATE_BOX.Text);
                 File1.Close();
                 MessageBox.Show("Thank You for your Particitipation!", "GodBless", MessageBoxButtons.OK);
+                Application.Exit();
             }
         }
         private void Interaction_BOX_Enter(object sender, EventArgs e)
@@ -240,6 +243,22 @@ namespace Contact_Tracing_App.Properties
         private void Diagnosed_BOX_Click(object sender, EventArgs e)
         {
             Diagnosed_LBL.Visible = false;
+        }
+        private void DATE_BOX_Enter(object sender, EventArgs e)
+        {
+         if(DATE_BOX.Text == "dd/mm/yy")
+            DATE_BOX.Text = "";
+            DATE_BOX.ForeColor = Color.Black;
+        }
+        private void DATE_BOX_Leave(object sender, EventArgs e)
+        {
+          if(DATE_BOX.Text == "")
+            DATE_BOX.Text = "dd/mm/yy";
+            DATE_BOX.ForeColor = Color.Gray;
+        }
+        private void DATE_BOX_Click(object sender, EventArgs e)
+        {
+            DATE_LBL.Visible = false;
         }
     }
 }

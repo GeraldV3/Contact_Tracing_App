@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Contact_Tracing_App
+namespace Contact_Tracing_App.Properties
 {
-    public partial class Form2 : Form
+    public partial class ADMIN : Form
     {
-        public Form2()
+        public ADMIN()
         {
             InitializeComponent();
+        }
+
+        private void ClickHere_BTN_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

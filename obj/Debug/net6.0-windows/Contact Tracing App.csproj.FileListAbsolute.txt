@@ -38,4 +38,4 @@ C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\refint\Cont
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.pdb
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.genruntimeconfig.cache
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\ref\Contact Tracing App.dll
-C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Form2.resources
+C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.ADMIN.resources
