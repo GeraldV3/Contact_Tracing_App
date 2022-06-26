@@ -35,9 +35,9 @@
             // 
             // INFO_BOX
             // 
-            this.INFO_BOX.Location = new System.Drawing.Point(38, 78);
+            this.INFO_BOX.Location = new System.Drawing.Point(39, 78);
             this.INFO_BOX.Name = "INFO_BOX";
-            this.INFO_BOX.Size = new System.Drawing.Size(264, 393);
+            this.INFO_BOX.Size = new System.Drawing.Size(264, 392);
             this.INFO_BOX.TabIndex = 0;
             this.INFO_BOX.Text = "";
             // 
@@ -58,7 +58,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ALLDATA1;
-            this.ClientSize = new System.Drawing.Size(326, 527);
+            this.ClientSize = new System.Drawing.Size(341, 498);
             this.Controls.Add(this.DATA_BTN);
             this.Controls.Add(this.INFO_BOX);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;

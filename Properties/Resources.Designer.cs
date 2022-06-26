@@ -153,6 +153,26 @@ namespace Contact_Tracing_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CLICK_HERE2 {
+            get {
+                object obj = ResourceManager.GetObject("CLICK HERE2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CLICK_HERE3 {
+            get {
+                object obj = ResourceManager.GetObject("CLICK HERE3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Continuation4 {
             get {
                 object obj = ResourceManager.GetObject("Continuation4", resourceCulture);

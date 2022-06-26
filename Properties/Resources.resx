@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ALLDATA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\ALLDATA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="New Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\NewClick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Submet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Submet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +151,17 @@
   <data name="CLICK HERE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\CLICK HERE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ALLDATA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\ALLDATA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ADMIN Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Continuation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Continuation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLICK HERE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\CLICK HERE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="New Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +175,7 @@
   <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NewClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\NewClick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CLICK HERE3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\CLICK HERE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

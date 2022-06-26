@@ -42,7 +42,7 @@
             // 
             this.Resgister_BTN.BackColor = System.Drawing.Color.Transparent;
             this.Resgister_BTN.Image = global::Contact_Tracing_App.Properties.Resources.Click;
-            this.Resgister_BTN.Location = new System.Drawing.Point(51, 208);
+            this.Resgister_BTN.Location = new System.Drawing.Point(55, 168);
             this.Resgister_BTN.Name = "Resgister_BTN";
             this.Resgister_BTN.Size = new System.Drawing.Size(300, 80);
             this.Resgister_BTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -53,7 +53,7 @@
             // AccesstoMain_BTN
             // 
             this.AccesstoMain_BTN.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ADMIN;
-            this.AccesstoMain_BTN.Location = new System.Drawing.Point(123, 473);
+            this.AccesstoMain_BTN.Location = new System.Drawing.Point(127, 462);
             this.AccesstoMain_BTN.Name = "AccesstoMain_BTN";
             this.AccesstoMain_BTN.Size = new System.Drawing.Size(132, 38);
             this.AccesstoMain_BTN.TabIndex = 1;
@@ -63,7 +63,7 @@
             // Username_TxtBOX
             // 
             this.Username_TxtBOX.BackColor = System.Drawing.Color.White;
-            this.Username_TxtBOX.Location = new System.Drawing.Point(119, 398);
+            this.Username_TxtBOX.Location = new System.Drawing.Point(123, 389);
             this.Username_TxtBOX.Name = "Username_TxtBOX";
             this.Username_TxtBOX.Size = new System.Drawing.Size(145, 23);
             this.Username_TxtBOX.TabIndex = 2;
@@ -74,7 +74,7 @@
             // Password_TxtBOX
             // 
             this.Password_TxtBOX.BackColor = System.Drawing.Color.White;
-            this.Password_TxtBOX.Location = new System.Drawing.Point(119, 440);
+            this.Password_TxtBOX.Location = new System.Drawing.Point(123, 430);
             this.Password_TxtBOX.Name = "Password_TxtBOX";
             this.Password_TxtBOX.Size = new System.Drawing.Size(145, 23);
             this.Password_TxtBOX.TabIndex = 3;
@@ -85,7 +85,7 @@
             // Login_BOX
             // 
             this.Login_BOX.Image = global::Contact_Tracing_App.Properties.Resources.Login;
-            this.Login_BOX.Location = new System.Drawing.Point(151, 344);
+            this.Login_BOX.Location = new System.Drawing.Point(153, 328);
             this.Login_BOX.Name = "Login_BOX";
             this.Login_BOX.Size = new System.Drawing.Size(88, 42);
             this.Login_BOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
