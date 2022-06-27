@@ -23,28 +23,33 @@ namespace Contact_Tracing_App.Properties
         }
         private void FilterRecord_PBOX_Click(object sender, EventArgs e)
         {
-            var Files = Directory.EnumerateFiles(@"C:\Users\pc\Desktop\OOP\Contract Tracing File");
-            List<string> DATE = new List<string>();
-            string Date = DATE_VIEW.Text;
-            byte Results = 0;
-            foreach (string file in Files)
+            string FilterDate = DATE_VIEW.Text;
+            int Results = 0;
+            List<string> dates = new List<string>();
+            StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt");
+            while (!reader.EndOfStream)
             {
-                string channel = File.ReadAllText(file);
-                if (channel.Contains(Date))
+                string DATA = reader.ReadLine();
+                if (DATA.Contains(FilterDate))
                 {
-                    var date = channel.Substring(channel.IndexOf(Date));
                     Results++;
                 }
             }
             if (Results != 0)
             {
-                MessageBox.Show("We found " + Results + " record on the List");
+                StreamWriter fileDATE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Filter\DATE.txt");
+                foreach (string DATA in dates)
+                {
+                    fileDATE.WriteLine();
+                }
+                MessageBox.Show("We found " + Results.ToString() + " in the Record");
+                FilterDateInfo FORM = new FilterDateInfo();
+                FORM.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Nothing in the List");
+                MessageBox.Show("Nothing in the Record!");
             }
         }
     }
 }
-

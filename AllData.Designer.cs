@@ -29,17 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllData));
-            this.INFO_BOX = new System.Windows.Forms.RichTextBox();
             this.DATA_BTN = new System.Windows.Forms.Button();
+            this.INFO_BOX = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // INFO_BOX
-            // 
-            this.INFO_BOX.Location = new System.Drawing.Point(39, 78);
-            this.INFO_BOX.Name = "INFO_BOX";
-            this.INFO_BOX.Size = new System.Drawing.Size(264, 392);
-            this.INFO_BOX.TabIndex = 0;
-            this.INFO_BOX.Text = "";
             // 
             // DATA_BTN
             // 
@@ -51,6 +43,14 @@
             this.DATA_BTN.UseVisualStyleBackColor = true;
             this.DATA_BTN.Click += new System.EventHandler(this.DATA_BTN_Click);
             // 
+            // INFO_BOX
+            // 
+            this.INFO_BOX.Location = new System.Drawing.Point(39, 77);
+            this.INFO_BOX.Name = "INFO_BOX";
+            this.INFO_BOX.Size = new System.Drawing.Size(264, 392);
+            this.INFO_BOX.TabIndex = 4;
+            this.INFO_BOX.Text = "";
+            // 
             // AllData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -59,8 +59,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ALLDATA1;
             this.ClientSize = new System.Drawing.Size(341, 498);
-            this.Controls.Add(this.DATA_BTN);
             this.Controls.Add(this.INFO_BOX);
+            this.Controls.Add(this.DATA_BTN);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AllData";
@@ -70,8 +70,7 @@
         }
 
         #endregion
-
-        private RichTextBox INFO_BOX;
         private Button DATA_BTN;
+        private RichTextBox INFO_BOX;
     }
 }

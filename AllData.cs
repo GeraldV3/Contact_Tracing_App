@@ -17,13 +17,12 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-
         private void DATA_BTN_Click(object sender, EventArgs e)
         {
-            string AllData = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt";
-            StreamReader reader = new StreamReader(AllData);
-            String Filedata = reader.ReadToEnd();
-            INFO_BOX.Text = Filedata.ToString();
+            string path = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt";
+            StreamReader ALL = new StreamReader(path);
+            string DATA = ALL.ReadToEnd();
+            INFO_BOX.Text = DATA.ToString();
         }
     }
 }

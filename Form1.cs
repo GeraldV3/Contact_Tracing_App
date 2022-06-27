@@ -47,10 +47,10 @@ namespace Contact_Tracing_App
             password = Password_TxtBOX.Text;
             if (username == "Gerald" && password == "Lopez")
             {
-                MessageBox.Show("Thank You ADMIN!");
+                MessageBox.Show("Succesfully Log in as ADMIN");
                 Hide();
-                ADMIN ADMIN = new ADMIN();
-                ADMIN.ShowDialog();
+                ADMIN ADMIN2 = new ADMIN();
+                ADMIN2.ShowDialog();
             }
             else
             {

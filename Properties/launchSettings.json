@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Contact Tracing App": {
+      "commandName": "Project",
+      "commandLineArgs": "\r\nl\r\n"
+    }
+  }
+}
