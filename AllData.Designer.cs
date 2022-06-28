@@ -45,6 +45,9 @@
             // 
             // INFO_BOX
             // 
+            this.INFO_BOX.BackColor = System.Drawing.Color.White;
+            this.INFO_BOX.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.INFO_BOX.ForeColor = System.Drawing.Color.Black;
             this.INFO_BOX.Location = new System.Drawing.Point(39, 77);
             this.INFO_BOX.Name = "INFO_BOX";
             this.INFO_BOX.Size = new System.Drawing.Size(264, 392);

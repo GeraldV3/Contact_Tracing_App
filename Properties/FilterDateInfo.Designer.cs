@@ -45,6 +45,7 @@
             // 
             // INFO_BOX2
             // 
+            this.INFO_BOX2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.INFO_BOX2.Location = new System.Drawing.Point(39, 80);
             this.INFO_BOX2.Name = "INFO_BOX2";
             this.INFO_BOX2.Size = new System.Drawing.Size(264, 392);

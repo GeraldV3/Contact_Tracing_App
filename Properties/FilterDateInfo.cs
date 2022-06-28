@@ -18,6 +18,10 @@ namespace Contact_Tracing_App.Properties
         }
         private void DATA_BTN_Click(object sender, EventArgs e)
         {
+            string path = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\DATE.txt";
+            StreamReader ALL = new StreamReader(path);
+            string DATA = ALL.ReadToEnd();
+            INFO_BOX2.Text = DATA.ToString();
         }
     }
 }
