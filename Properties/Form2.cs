@@ -72,7 +72,7 @@ namespace Contact_Tracing_App.Properties
         {
             string Diagnosed = COVID_BOX.Text;
             byte Results = 0;
-            StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt");
+            StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt", true);
             List<string> Covid = new List<string>();
             while (!reader.EndOfStream)
             {
@@ -89,12 +89,17 @@ namespace Contact_Tracing_App.Properties
                 StreamWriter file2 = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\COVID.txt");
                 foreach (string Positive in Covid)
                 {
-                    file2.WriteLine(Covid);
+                    file2.WriteLine(Positive);
                 }
                 MessageBox.Show("We found " + Results.ToString() + " in the Record");
                 file2.Close();
                 CovidPositive Next = new CovidPositive();
                 Next.ShowDialog();
+            }
+            else
+            {
+                reader.Close();
+                MessageBox.Show("Wrong Spelling!");
             }
         }
         private void COVID_BOX_Click(object sender, EventArgs e)

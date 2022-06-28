@@ -64,7 +64,7 @@
             this.Controls.Add(this.DATA_BTN3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CovidPositive";
-            this.Text = "CovidPositive";
+            this.Text = "COVID";
             this.ResumeLayout(false);
 
         }
