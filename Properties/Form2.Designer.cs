@@ -32,11 +32,12 @@
             this.DATE_VIEW = new System.Windows.Forms.DateTimePicker();
             this.ShowAll_PBOX = new System.Windows.Forms.PictureBox();
             this.FilterRecord_PBOX = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Diagnosed_BOX = new System.Windows.Forms.TextBox();
+            this.Covid19_BOX = new System.Windows.Forms.PictureBox();
+            this.COVID_BOX = new System.Windows.Forms.TextBox();
+            this.YesNo_LBL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ShowAll_PBOX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FilterRecord_PBOX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Covid19_BOX)).BeginInit();
             this.SuspendLayout();
             // 
             // DATE_VIEW
@@ -71,23 +72,39 @@
             this.FilterRecord_PBOX.TabStop = false;
             this.FilterRecord_PBOX.Click += new System.EventHandler(this.FilterRecord_PBOX_Click);
             // 
-            // pictureBox1
+            // Covid19_BOX
             // 
-            this.pictureBox1.Image = global::Contact_Tracing_App.Properties.Resources.CLICK_HERE3;
-            this.pictureBox1.Location = new System.Drawing.Point(401, 414);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.Covid19_BOX.Image = global::Contact_Tracing_App.Properties.Resources.CLICK_HERE3;
+            this.Covid19_BOX.Location = new System.Drawing.Point(401, 414);
+            this.Covid19_BOX.Name = "Covid19_BOX";
+            this.Covid19_BOX.Size = new System.Drawing.Size(241, 59);
+            this.Covid19_BOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Covid19_BOX.TabIndex = 6;
+            this.Covid19_BOX.TabStop = false;
+            this.Covid19_BOX.Click += new System.EventHandler(this.Covid19_BOX_Click);
             // 
-            // Diagnosed_BOX
+            // COVID_BOX
             // 
-            this.Diagnosed_BOX.Location = new System.Drawing.Point(443, 385);
-            this.Diagnosed_BOX.Name = "Diagnosed_BOX";
-            this.Diagnosed_BOX.Size = new System.Drawing.Size(148, 23);
-            this.Diagnosed_BOX.TabIndex = 7;
-            this.Diagnosed_BOX.Enter += new System.EventHandler(this.Diagnosed_BOX_Enter);
+            this.COVID_BOX.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.COVID_BOX.Location = new System.Drawing.Point(401, 379);
+            this.COVID_BOX.Name = "COVID_BOX";
+            this.COVID_BOX.Size = new System.Drawing.Size(241, 30);
+            this.COVID_BOX.TabIndex = 67;
+            this.COVID_BOX.Click += new System.EventHandler(this.COVID_BOX_Click);
+            this.COVID_BOX.Enter += new System.EventHandler(this.COVID_BOX_Enter);
+            this.COVID_BOX.Leave += new System.EventHandler(this.COVID_BOX_Leave);
+            // 
+            // YesNo_LBL
+            // 
+            this.YesNo_LBL.AutoSize = true;
+            this.YesNo_LBL.BackColor = System.Drawing.Color.AliceBlue;
+            this.YesNo_LBL.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.YesNo_LBL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.YesNo_LBL.Location = new System.Drawing.Point(402, 382);
+            this.YesNo_LBL.Name = "YesNo_LBL";
+            this.YesNo_LBL.Size = new System.Drawing.Size(153, 22);
+            this.YesNo_LBL.TabIndex = 68;
+            this.YesNo_LBL.Text = "Positive/Negative";
             // 
             // ADMIN
             // 
@@ -95,8 +112,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ADMIN_Background7;
             this.ClientSize = new System.Drawing.Size(800, 481);
-            this.Controls.Add(this.Diagnosed_BOX);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.YesNo_LBL);
+            this.Controls.Add(this.COVID_BOX);
+            this.Controls.Add(this.Covid19_BOX);
             this.Controls.Add(this.FilterRecord_PBOX);
             this.Controls.Add(this.ShowAll_PBOX);
             this.Controls.Add(this.DATE_VIEW);
@@ -106,7 +124,7 @@
             this.Text = "ADMIN";
             ((System.ComponentModel.ISupportInitialize)(this.ShowAll_PBOX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FilterRecord_PBOX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Covid19_BOX)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +134,8 @@
         private DateTimePicker DATE_VIEW;
         private PictureBox ShowAll_PBOX;
         private PictureBox FilterRecord_PBOX;
-        private PictureBox pictureBox1;
-        private TextBox Diagnosed_BOX;
+        private PictureBox Covid19_BOX;
+        private TextBox COVID_BOX;
+        private Label YesNo_LBL;
     }
 }

@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FilterDateInfo));
-            this.DATA_BTN = new System.Windows.Forms.Button();
+            this.DATA_BTN2 = new System.Windows.Forms.Button();
             this.INFO_BOX2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // DATA_BTN
+            // DATA_BTN2
             // 
-            this.DATA_BTN.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.NewClick;
-            this.DATA_BTN.Location = new System.Drawing.Point(107, 12);
-            this.DATA_BTN.Name = "DATA_BTN";
-            this.DATA_BTN.Size = new System.Drawing.Size(128, 53);
-            this.DATA_BTN.TabIndex = 2;
-            this.DATA_BTN.UseVisualStyleBackColor = true;
-            this.DATA_BTN.Click += new System.EventHandler(this.DATA_BTN_Click);
+            this.DATA_BTN2.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.NewClick;
+            this.DATA_BTN2.Location = new System.Drawing.Point(107, 12);
+            this.DATA_BTN2.Name = "DATA_BTN2";
+            this.DATA_BTN2.Size = new System.Drawing.Size(128, 53);
+            this.DATA_BTN2.TabIndex = 2;
+            this.DATA_BTN2.UseVisualStyleBackColor = true;
+            this.DATA_BTN2.Click += new System.EventHandler(this.DATA_BTN_Click);
             // 
             // INFO_BOX2
             // 
@@ -59,7 +59,7 @@
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.ALLDATA1;
             this.ClientSize = new System.Drawing.Size(341, 498);
             this.Controls.Add(this.INFO_BOX2);
-            this.Controls.Add(this.DATA_BTN);
+            this.Controls.Add(this.DATA_BTN2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FilterDateInfo";
             this.Text = "Information";
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private Button DATA_BTN;
+        private Button DATA_BTN2;
         private RichTextBox INFO_BOX2;
     }
 }

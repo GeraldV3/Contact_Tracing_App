@@ -448,9 +448,9 @@
             this.Diagnosed_LBL.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Diagnosed_LBL.Location = new System.Drawing.Point(35, 721);
             this.Diagnosed_LBL.Name = "Diagnosed_LBL";
-            this.Diagnosed_LBL.Size = new System.Drawing.Size(68, 22);
+            this.Diagnosed_LBL.Size = new System.Drawing.Size(153, 22);
             this.Diagnosed_LBL.TabIndex = 85;
-            this.Diagnosed_LBL.Text = "Yes/No";
+            this.Diagnosed_LBL.Text = "Positive/Negative";
             // 
             // Class_BOX
             // 
@@ -472,7 +472,7 @@
             this.Diagnosed_BOX.ForeColor = System.Drawing.Color.Black;
             this.Diagnosed_BOX.Location = new System.Drawing.Point(34, 717);
             this.Diagnosed_BOX.Name = "Diagnosed_BOX";
-            this.Diagnosed_BOX.Size = new System.Drawing.Size(151, 30);
+            this.Diagnosed_BOX.Size = new System.Drawing.Size(306, 30);
             this.Diagnosed_BOX.TabIndex = 83;
             this.Diagnosed_BOX.Click += new System.EventHandler(this.Diagnosed_BOX_Click);
             this.Diagnosed_BOX.Enter += new System.EventHandler(this.Diagnosed_BOX_Enter);

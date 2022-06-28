@@ -245,39 +245,39 @@ namespace Contact_Tracing_App.Properties
         }
         private void Diagnosed_BOX_Enter(object sender, EventArgs e)
         {
-            if (Diagnosed_BOX.Text == "Yes/No")
+            if (Diagnosed_BOX.Text == "Positive/Negative")
                 Diagnosed_BOX.Text = "";
-            Diagnosed_BOX.ForeColor = Color.Black;
+                Diagnosed_BOX.ForeColor = Color.Black;
         }
         private void Diagnosed_BOX_Leave(object sender, EventArgs e)
         {
             if (Diagnosed_BOX.Text == "")
-                Diagnosed_BOX.Text = "Yes/No";
-            Diagnosed_BOX.ForeColor = Color.Gray;
+                Diagnosed_BOX.Text = "Positive/Negative";
+                Diagnosed_BOX.ForeColor = Color.Gray;
         }
         private void Class_BOX_Enter(object sender, EventArgs e)
         {
             if (Class_BOX.Text == "Asymptomatic, Mild, Moderate, Severe, Critical, None")
                 Class_BOX.Text = "";
-            Class_BOX.ForeColor = Color.Black;
+                Class_BOX.ForeColor = Color.Black;
         }
         private void Class_BOX_Leave(object sender, EventArgs e)
         {
             if (Class_BOX.Text == "")
                 Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
-            Class_BOX.ForeColor = Color.Gray;
+                Class_BOX.ForeColor = Color.Gray;
         }
         private void DATE_BOX_Enter(object sender, EventArgs e)
         {
             if (DATE_BOX.Text == "mm/dd/yy")
                 DATE_BOX.Text = "";
-            DATE_BOX.ForeColor = Color.Black;
+                DATE_BOX.ForeColor = Color.Black;
         }
         private void DATE_BOX_Leave(object sender, EventArgs e)
         {
             if (DATE_BOX.Text == "")
                 DATE_BOX.Text = "mm/dd/yy";
-            DATE_BOX.ForeColor = Color.Gray;
+                DATE_BOX.ForeColor = Color.Gray;
         }
         private void Diagnosed_BOX_Click(object sender, EventArgs e)
         {

@@ -40,3 +40,4 @@ C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\ref\Contact
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.ADMIN.resources
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.AllData.resources
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.FilterDateInfo.resources
+C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.CovidPositive.resources

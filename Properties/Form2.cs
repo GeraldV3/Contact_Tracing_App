@@ -15,6 +15,7 @@ namespace Contact_Tracing_App.Properties
         public ADMIN()
         {
             InitializeComponent();
+            YesNo_LBL.Visible = true;
         }
         private void ShowAll_PBOX_Click(object sender, EventArgs e)
         {
@@ -55,9 +56,50 @@ namespace Contact_Tracing_App.Properties
                 MessageBox.Show("Nothing in the Record!");
             }
         }
-        private void Diagnosed_BOX_Enter(object sender, EventArgs e)
+        private void COVID_BOX_Enter(object sender, EventArgs e)
         {
-
+            if (COVID_BOX.Text == "Yes/No")
+                COVID_BOX.Text = "";
+                COVID_BOX.ForeColor = Color.Black;
+        }
+        private void COVID_BOX_Leave(object sender, EventArgs e)
+        {
+            if (COVID_BOX.Text == "")
+                COVID_BOX.Text = "Yes/No";
+                COVID_BOX.ForeColor = Color.Gray;
+        }
+        private void Covid19_BOX_Click(object sender, EventArgs e)
+        {
+            string Diagnosed = COVID_BOX.Text;
+            byte Results = 0;
+            StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt");
+            List<string> Covid = new List<string>();
+            while (!reader.EndOfStream)
+            {
+                string Positive = reader.ReadLine();
+                if (Positive.Contains(Diagnosed))
+                {
+                    Results++;
+                    Covid.Add(Positive);
+                }
+            }
+            if (Results != 0)
+            {
+                reader.Close();
+                StreamWriter file2 = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\COVID.txt");
+                foreach (string Positive in Covid)
+                {
+                    file2.WriteLine(Covid);
+                }
+                MessageBox.Show("We found " + Results.ToString() + " in the Record");
+                file2.Close();
+                CovidPositive Next = new CovidPositive();
+                Next.ShowDialog();
+            }
+        }
+        private void COVID_BOX_Click(object sender, EventArgs e)
+        {
+            YesNo_LBL.Visible = false;
         }
     }
 }
