@@ -20,7 +20,6 @@ namespace Contact_Tracing_App.Properties
             FirstName_LBL.Visible = true;
             MiddleName_LBL.Visible = true;
             ExtName_LBL.Visible = true;
-            ID_LBL.Visible = true;
             HomeNumber_LBL.Visible = true;
             StreetName_LBL.Visible = true;
             Barangay_LBL.Visible = true;
@@ -28,8 +27,10 @@ namespace Contact_Tracing_App.Properties
             ProvinceCity_LBL.Visible = true;
             Contact_LBL.Visible = true;
             Gender_LBL.Visible = true;
-            Birthday_LBL.Visible=true;
             CivilStatus_LBL.Visible = true;
+            Diagnosed_LBL.Visible = true;
+            DATE_LBL.Visible = true;
+
         }
         private void LastName_BOX_Enter(object sender, EventArgs e)
         {
@@ -45,33 +46,21 @@ namespace Contact_Tracing_App.Properties
         }
         private void Next_Button_Click(object sender, EventArgs e)
         {
-            if (LastName_BOX.Text == "" || FirstName_BOX.Text == "" || MiddleName_BOX.Text == "" || ExtName_BOX.Text == "" || ID_BOX.Text == "" || IDNumber_BOX.Text == ""
-                || HomeNumber_BOX.Text == "" || StreetName_BOX.Text == "" || Municipality_BOX.Text == "" || Contact_BOX.Text == "" || Gender_BOX.Text == "" || Birthday_BOX.Text == "" 
-                || CivilStatus_BOX.Text == "")
+            if (LastName_BOX.Text == "" || FirstName_BOX.Text == "" || MiddleName_BOX.Text == "" || ExtName_BOX.Text == "" || HomeNumber_BOX.Text == "" || StreetName_BOX.Text == "" || Municipality_BOX.Text == "" || Contact_BOX.Text == "" || Gender_BOX.Text == ""
+                || CivilStatus_BOX.Text == "" || Diagnosed_BOX.Text == "" || Class_BOX.Text == "" || DATE_BOX.Text == "")
             {
                 MessageBox.Show("Please Complete the Form", "Error", MessageBoxButtons.OK);
             }    
             else
             {
-                StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\.txt",true);
-                File.WriteLine("Last Name : " + LastName_BOX.Text);
-                File.WriteLine("First Name : " + FirstName_BOX.Text);
-                File.WriteLine("Middle Name : " + MiddleName_BOX.Text);
-                File.WriteLine("Ext. Name : " + ExtName_BOX.Text);
-                File.WriteLine("ID : " + ID_BOX.Text);
-                File.WriteLine("ID Number : " + IDNumber_BOX.Text);
-                File.WriteLine("Home Number : " + HomeNumber_BOX.Text);
-                File.WriteLine("Street Name : " + StreetName_BOX.Text);
-                File.WriteLine("Municipality : " + Municipality_BOX.Text);
-                File.WriteLine("Contact : " + Contact_BOX.Text);
-                File.WriteLine("Gender : " + Gender_BOX.Text);
-                File.WriteLine("Birthday : " + Birthday_BOX.Text);
-                File.WriteLine("CivilStatus : " + CivilStatus_BOX.Text);
+                StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt",true);
+                File.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " + ExtName_BOX.Text + ", "
+                + HomeNumber_BOX.Text + ", "+ StreetName_BOX.Text + ", " + Barangay_BOX.Text + ", "  + Municipality_BOX.Text + ", "  +
+                ProvinceCity_BOX.Text+ ", " + Contact_BOX.Text+  ", " + Gender_BOX.Text + ", " + CivilStatus_BOX.Text + ", " + "Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text
+                + ", " + "Classfinication ? " + Class_BOX.Text + ", " + DATE_BOX.Text);
                 File.Close();
-                Hide();
-                Continuation Next = new Continuation();
-                Next.ShowDialog();
-                Show();
+                MessageBox.Show("Thank You for your Particitipation!", "GodBless", MessageBoxButtons.OK);
+                Application.Exit();
             }
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)
@@ -109,30 +98,6 @@ namespace Contact_Tracing_App.Properties
             if (ExtName_BOX.Text == "")
                 ExtName_BOX.Text = "Ext. Name";
                 ExtName_BOX.ForeColor = Color.Gray;
-        }
-        private void ID_BOX_Enter(object sender, EventArgs e)
-        {
-            if (ID_BOX.Text == "ID")
-                ID_BOX.Text = "";
-                ID_BOX.ForeColor = Color.Black;
-        }
-        private void ID_BOX_Leave(object sender, EventArgs e)
-        {
-           if (ID_BOX.Text == "")
-               ID_BOX.Text = "ID";
-               ID_BOX.ForeColor = Color.Gray;
-        }
-        private void IDNumber_BOX_Enter(object sender, EventArgs e)
-        {
-            if (IDNumber_BOX.Text == "ID Number")
-                IDNumber_BOX.Text = "";
-                IDNumber_BOX.ForeColor = Color.Black;
-        }
-        private void IDNumber_BOX_Leave(object sender, EventArgs e)
-        {
-            if (IDNumber_BOX.Text == "")
-                IDNumber_BOX.Text = "ID Number";
-                IDNumber_BOX.ForeColor = Color.Gray;
         }
         private void HomeNumber_BOX_Enter(object sender, EventArgs e)
         {
@@ -218,18 +183,6 @@ namespace Contact_Tracing_App.Properties
                 Gender_BOX.Text = "Gender";
                 Gender_BOX.ForeColor = Color.Gray;
         }
-        private void Birthday_BOX_Enter(object sender, EventArgs e)
-        {
-            if (Birthday_BOX.Text == "mm/dd/yyyy")
-                Birthday_BOX.Text = "";
-                Birthday_BOX.ForeColor = Color.Black;
-        }
-        private void Birthday_BOX_Leave(object sender, EventArgs e)
-        {
-            if (Birthday_BOX.Text == "")
-                Birthday_BOX.Text = "mm/dd/yyyy";
-                Birthday_BOX.ForeColor = Color.Gray;
-        }
         private void CivilStatus_BOX_Enter(object sender, EventArgs e)
         {
             if (CivilStatus_BOX.Text == "Civil Status")
@@ -250,21 +203,9 @@ namespace Contact_Tracing_App.Properties
         {
             FirstName_LBL.Visible = false;
         }
-        private void MiddleName_BOX_TextChanged(object sender, EventArgs e)
-        {
-            MiddleName_LBL.Visible = false;
-        }
         private void ExtName_BOX_Click(object sender, EventArgs e)
         {
             ExtName_LBL.Visible = false;
-        }
-        private void ID_BOX_Click(object sender, EventArgs e)
-        {
-            ID_LBL.Visible = false;
-        }
-        private void IDNumber_BOX_Click(object sender, EventArgs e)
-        {
-            IDNumber_LBL.Visible = false;
         }
         private void HomeNumber_BOX_Click(object sender, EventArgs e)
         {
@@ -301,6 +242,54 @@ namespace Contact_Tracing_App.Properties
         private void CivilStatus_BOX_Click(object sender, EventArgs e)
         {
             CivilStatus_LBL.Visible=false;
+        }
+        private void Diagnosed_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Diagnosed_BOX.Text == "Yes/No")
+                Diagnosed_BOX.Text = "";
+            Diagnosed_BOX.ForeColor = Color.Black;
+        }
+        private void Diagnosed_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Diagnosed_BOX.Text == "")
+                Diagnosed_BOX.Text = "Yes/No";
+            Diagnosed_BOX.ForeColor = Color.Gray;
+        }
+        private void Class_BOX_Enter(object sender, EventArgs e)
+        {
+            if (Class_BOX.Text == "Asymptomatic, Mild, Moderate, Severe, Critical, None")
+                Class_BOX.Text = "";
+            Class_BOX.ForeColor = Color.Black;
+        }
+        private void Class_BOX_Leave(object sender, EventArgs e)
+        {
+            if (Class_BOX.Text == "")
+                Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
+            Class_BOX.ForeColor = Color.Gray;
+        }
+        private void DATE_BOX_Enter(object sender, EventArgs e)
+        {
+            if (DATE_BOX.Text == "mm/dd/yy")
+                DATE_BOX.Text = "";
+            DATE_BOX.ForeColor = Color.Black;
+        }
+        private void DATE_BOX_Leave(object sender, EventArgs e)
+        {
+            if (DATE_BOX.Text == "")
+                DATE_BOX.Text = "mm/dd/yy";
+            DATE_BOX.ForeColor = Color.Gray;
+        }
+        private void Diagnosed_BOX_Click(object sender, EventArgs e)
+        {
+            Diagnosed_LBL.Visible = false;
+        }
+        private void DATE_BOX_Click(object sender, EventArgs e)
+        {
+            DATE_LBL.Visible = false;
+        }
+        private void MiddleName_BOX_Click(object sender, EventArgs e)
+        {
+            MiddleName_LBL.Visible = false;
         }
     }
 }

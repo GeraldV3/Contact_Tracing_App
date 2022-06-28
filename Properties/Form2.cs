@@ -26,7 +26,7 @@ namespace Contact_Tracing_App.Properties
             string FilterDate = DATE_VIEW.Text;
             int Results = 0;
             List<string> dates = new List<string>();
-            StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt");
+            StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt");
             while (!reader.EndOfStream)
             {
                 string DATA = reader.ReadLine();
@@ -37,7 +37,7 @@ namespace Contact_Tracing_App.Properties
             }
             if (Results != 0)
             {
-                StreamWriter fileDATE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Filter\DATE.txt");
+                StreamWriter fileDATE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Filter\DATE.txt", true);
                 foreach (string DATA in dates)
                 {
                     fileDATE.WriteLine();

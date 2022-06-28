@@ -233,6 +233,16 @@ namespace Contact_Tracing_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap New_Background3 {
+            get {
+                object obj = ResourceManager.GetObject("New Background3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NewClick {
             get {
                 object obj = ResourceManager.GetObject("NewClick", resourceCulture);

@@ -19,7 +19,7 @@ namespace Contact_Tracing_App
         }
         private void DATA_BTN_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\Info.txt";
+            string path = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt";
             StreamReader ALL = new StreamReader(path);
             string DATA = ALL.ReadToEnd();
             INFO_BOX.Text = DATA.ToString();
