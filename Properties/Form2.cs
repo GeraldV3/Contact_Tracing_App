@@ -37,8 +37,14 @@ namespace Contact_Tracing_App.Properties
                     dates.Add(DATA);
                 }
             }
-            if (Results != 0)
+            if (Results == 0)
             {
+                reader.Close();
+                MessageBox.Show("Nothing in the Record!");
+            }
+            else
+            {
+
                 reader.Close();
                 StreamWriter fileDATE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\DATE.txt");
                 foreach (string DATA in dates)
@@ -49,11 +55,6 @@ namespace Contact_Tracing_App.Properties
                 fileDATE.Close();
                 FilterDateInfo FORM = new FilterDateInfo();
                 FORM.ShowDialog();
-            }
-            else
-            {
-                reader.Close();
-                MessageBox.Show("Nothing in the Record!");
             }
         }
         private void COVID_BOX_Enter(object sender, EventArgs e)

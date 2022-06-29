@@ -41,3 +41,9 @@ C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tra
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.AllData.resources
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.FilterDateInfo.resources
 C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.CovidPositive.resources
+C:\Users\pc\Desktop\OOP\Contact Tracing App\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\pc\Desktop\OOP\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\pc\Desktop\OOP\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\pc\Desktop\OOP\Contact Tracing App\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\pc\Desktop\OOP\Contact Tracing App\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\pc\Desktop\OOP\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.CopyComplete
