@@ -54,13 +54,16 @@ namespace Contact_Tracing_App.Properties
             else
             {
                 StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt",true);
-                File.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " + ExtName_BOX.Text + ", "
+                File.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " +"Ext. Name " + ExtName_BOX.Text + " , "
                 + HomeNumber_BOX.Text + ", "+ StreetName_BOX.Text + ", " + Barangay_BOX.Text + ", "  + Municipality_BOX.Text + ", "  +
                 ProvinceCity_BOX.Text+ ", " + Contact_BOX.Text+  ", " + Gender_BOX.Text + ", " + CivilStatus_BOX.Text + ", " + "Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text
                 + ", " + "Classfinication ? " + Class_BOX.Text + ", " + DATE_BOX.Text);
                 File.Close();
                 MessageBox.Show("Thank You for your Particitipation!", "GodBless", MessageBoxButtons.OK);
-                Application.Exit();
+                MessageBox.Show("Please Take a Screen Shot in your generated QRCODE");
+                Hide();
+                QR_Generator QR = new QR_Generator();
+                QR.ShowDialog();
             }
         }
         private void FirstName_BOX_Enter(object sender, EventArgs e)

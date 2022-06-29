@@ -13,6 +13,9 @@
     <Compile Update="Properties\FilterDateInfo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Properties\GeneratorQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
