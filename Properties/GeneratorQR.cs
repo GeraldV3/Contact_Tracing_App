@@ -17,17 +17,17 @@ namespace Contact_Tracing_App.Properties
         {
             InitializeComponent();
             string path = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt";
-            StreamReader ALL = new StreamReader(path);
-            string DATA = ALL.ReadToEnd();
+            StreamReader INFO = new StreamReader(path);
+            string DATA = INFO.ReadToEnd();
             QRcode_Txt.Text = DATA.ToString();
         }
 
         private void Generate_BTN_Click(object sender, EventArgs e)
         {
-            QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(QRcode_Txt.Text, QRCodeGenerator.ECCLevel.Q);
-            QRCode code = new QRCode(data);
-            QR_PIC.Image = code.GetGraphic(5);
+            QRCodeGenerator QR = new QRCodeGenerator();
+            QRCodeData INFO = QR.CreateQrCode(QRcode_Txt.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode CODE = new QRCode(INFO);
+            QR_PIC.Image = CODE.GetGraphic(5);
         }
     }
 }

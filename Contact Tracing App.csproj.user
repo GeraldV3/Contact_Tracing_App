@@ -22,5 +22,8 @@
     <Compile Update="Properties\Questions.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Properties\Scanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

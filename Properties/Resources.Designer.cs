@@ -253,6 +253,16 @@ namespace Contact_Tracing_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Enter {
+            get {
+                object obj = ResourceManager.GetObject("Enter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Generate {
             get {
                 object obj = ResourceManager.GetObject("Generate", resourceCulture);
@@ -316,6 +326,16 @@ namespace Contact_Tracing_App.Properties {
         internal static System.Drawing.Bitmap New_Background3 {
             get {
                 object obj = ResourceManager.GetObject("New Background3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap New_Background4 {
+            get {
+                object obj = ResourceManager.GetObject("New Background4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,6 +436,26 @@ namespace Contact_Tracing_App.Properties {
         internal static System.Drawing.Bitmap QRGeneratorBG6 {
             get {
                 object obj = ResourceManager.GetObject("QRGeneratorBG6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QRGeneratorBG7 {
+            get {
+                object obj = ResourceManager.GetObject("QRGeneratorBG7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Scanner {
+            get {
+                object obj = ResourceManager.GetObject("Scanner", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

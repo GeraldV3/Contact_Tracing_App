@@ -60,7 +60,7 @@ namespace Contact_Tracing_App.Properties
                 + ", " + "Classfinication ? " + Class_BOX.Text + ", " + DATE_BOX.Text);
                 File.Close();
                 MessageBox.Show("Thank You for your Particitipation!", "GodBless", MessageBoxButtons.OK);
-                MessageBox.Show("Please Take a Screen Shot in your generated QRCODE");
+                MessageBox.Show("Please Take a Screen Shot of your generated QR CODE", "Take Note!");
                 Hide();
                 QR_Generator QR = new QR_Generator();
                 QR.ShowDialog();
@@ -293,6 +293,12 @@ namespace Contact_Tracing_App.Properties
         private void MiddleName_BOX_Click(object sender, EventArgs e)
         {
             MiddleName_LBL.Visible = false;
+        }
+        private void Enter_BTN_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Scanner QRScan = new Scanner();
+            QRScan.ShowDialog();
         }
     }
 }
