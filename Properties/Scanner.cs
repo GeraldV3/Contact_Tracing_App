@@ -12,11 +12,13 @@ using AForge.Video.DirectShow;
 using ZXing.Aztec;
 using ZXing;
 using ZXing.Windows.Compatibility;
+using System.Media;
 
 namespace Contact_Tracing_App.Properties
 {
     public partial class Scanner_Form : Form
     {
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
         private FilterInfoCollection CaptureDevice;
         private VideoCaptureDevice FinalFrame;
         public Scanner_Form()
@@ -33,6 +35,7 @@ namespace Contact_Tracing_App.Properties
         }
         private void Start_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             FinalFrame = new VideoCaptureDevice(CaptureDevice[Camera_Device.SelectedIndex].MonikerString);
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
@@ -66,6 +69,7 @@ namespace Contact_Tracing_App.Properties
         }
         private void Reader_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Timer.Start();
         }
     }

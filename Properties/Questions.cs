@@ -8,11 +8,13 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Contact_Tracing_App.Properties
 {
     public partial class Questions : Form
     {
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
         public Questions()
         {
             InitializeComponent();
@@ -46,6 +48,7 @@ namespace Contact_Tracing_App.Properties
         }
         private void Next_Button_Click(object sender, EventArgs e)
         {
+            Click.Play();
             if (LastName_BOX.Text == "" || FirstName_BOX.Text == "" || MiddleName_BOX.Text == "" || ExtName_BOX.Text == "" || HomeNumber_BOX.Text == "" || StreetName_BOX.Text == "" || Municipality_BOX.Text == "" || Contact_BOX.Text == "" || Gender_BOX.Text == ""
                 || CivilStatus_BOX.Text == "" || Diagnosed_BOX.Text == "" || Class_BOX.Text == "" || DATE_BOX.Text == "")
             {
@@ -201,50 +204,62 @@ namespace Contact_Tracing_App.Properties
         }
         private void LastName_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             LastName_LBL.Visible = false;
         }
         private void FirstName_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             FirstName_LBL.Visible = false;
         }
         private void ExtName_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             ExtName_LBL.Visible = false;
         }
         private void HomeNumber_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             HomeNumber_LBL.Visible = false;
         }
         private void StreetName_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             StreetName_LBL.Visible=false;
         }
         private void Barangay_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Barangay_LBL.Visible=false;
         }
         private void Municipality_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Municipality_LBL.Visible=false; 
         }
         private void ProvinceCity_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             ProvinceCity_LBL.Visible=false; 
         }
         private void Contact_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Contact_LBL.Visible=false;  
         }
         private void Gender_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Gender_LBL.Visible=false;
         }
         private void Birthday_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Birthday_LBL.Visible=false;
         }
         private void CivilStatus_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             CivilStatus_LBL.Visible=false;
         }
         private void Diagnosed_BOX_Enter(object sender, EventArgs e)
@@ -285,24 +300,29 @@ namespace Contact_Tracing_App.Properties
         }
         private void Diagnosed_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Diagnosed_LBL.Visible = false;
         }
         private void DATE_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             DATE_LBL.Visible = false;
         }
         private void MiddleName_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             MiddleName_LBL.Visible = false;
         }
         private void Enter_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             Hide();
             Scanner_Form QRScan = new Scanner_Form();
             QRScan.ShowDialog();
         }
         private void Generate_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             StreamWriter QRCODE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\QRCODE.txt", true);
             QRCODE.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " + "Ext. Name " + ExtName_BOX.Text + " , "
             + HomeNumber_BOX.Text + ", " + StreetName_BOX.Text + ", " + Barangay_BOX.Text + ", " + Municipality_BOX.Text + ", " +
@@ -310,6 +330,10 @@ namespace Contact_Tracing_App.Properties
             + ", " + "Classfinication ? " + Class_BOX.Text + ", " + DATE_BOX.Text);
             QRCODE.Close();
             MessageBox.Show("You can now submit your Form!", "Generated!");
+        }
+        private void Class_BOX_Click(object sender, EventArgs e)
+        {
+            Click.Play();
         }
     }
 }

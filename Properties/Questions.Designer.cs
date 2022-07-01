@@ -467,6 +467,7 @@
             this.Class_BOX.Size = new System.Drawing.Size(432, 30);
             this.Class_BOX.TabIndex = 84;
             this.Class_BOX.Text = "Asymptomatic, Mild, Moderate, Severe, Critical, None";
+            this.Class_BOX.Click += new System.EventHandler(this.Class_BOX_Click);
             this.Class_BOX.Enter += new System.EventHandler(this.Class_BOX_Enter);
             this.Class_BOX.Leave += new System.EventHandler(this.Class_BOX_Leave);
             // 
@@ -523,7 +524,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.New_Background5;
-            this.ClientSize = new System.Drawing.Size(1014, 845);
+            this.ClientSize = new System.Drawing.Size(1014, 837);
             this.Controls.Add(this.Generate_BTN);
             this.Controls.Add(this.Enter_BTN);
             this.Controls.Add(this.QRScan_BTN);

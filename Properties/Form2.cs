@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Contact_Tracing_App.Properties
 {
     public partial class ADMIN : Form
     {
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
         public ADMIN()
         {
             InitializeComponent();
@@ -19,11 +21,13 @@ namespace Contact_Tracing_App.Properties
         }
         private void ShowAll_PBOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             AllData DATA = new AllData();
             DATA.ShowDialog();
         }
         private void FilterRecord_PBOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             string FilterDate = DATE_VIEW.Text;
             byte Results = 0;
             StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt");
@@ -71,6 +75,7 @@ namespace Contact_Tracing_App.Properties
         }
         private void Covid19_BOX_Click(object sender, EventArgs e)
         {
+            Click.Play();
             string Diagnosed = COVID_BOX.Text;
             byte Results = 0;
             StreamReader reader = new StreamReader(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt", true);

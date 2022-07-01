@@ -24,6 +24,7 @@ namespace Contact_Tracing_App.Properties
 
         private void Generate_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             QRCodeGenerator QR = new QRCodeGenerator();
             QRCodeData INFO = QR.CreateQrCode(QRcode_Txt.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode CODE = new QRCode(INFO);
