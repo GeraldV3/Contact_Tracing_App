@@ -43,11 +43,11 @@
             // 
             this.Start_BTN.BackColor = System.Drawing.Color.Transparent;
             this.Start_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Start_BTN.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Start_BTN.ForeColor = System.Drawing.Color.Transparent;
             this.Start_BTN.Image = global::Contact_Tracing_App.Properties.Resources.Start;
-            this.Start_BTN.Location = new System.Drawing.Point(14, 622);
+            this.Start_BTN.Location = new System.Drawing.Point(14, 616);
             this.Start_BTN.Name = "Start_BTN";
-            this.Start_BTN.Size = new System.Drawing.Size(194, 40);
+            this.Start_BTN.Size = new System.Drawing.Size(194, 53);
             this.Start_BTN.TabIndex = 0;
             this.Start_BTN.UseVisualStyleBackColor = false;
             this.Start_BTN.Click += new System.EventHandler(this.Start_BTN_Click);
@@ -110,7 +110,7 @@
             this.Controls.Add(this.Start_BTN);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Scanner_Form";
-            this.Text = "Scanner";
+            this.Text = "QR SCANNER";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Scanner_Form_FormClosing);
             this.Load += new System.EventHandler(this.Scanner_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Webcam_PIC)).EndInit();

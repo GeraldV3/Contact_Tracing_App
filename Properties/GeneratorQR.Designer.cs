@@ -81,7 +81,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.QRGeneratorBG8;
+            this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.QRGeneratorBG9;
             this.ClientSize = new System.Drawing.Size(520, 713);
             this.Controls.Add(this.QRcode_Txt);
             this.Controls.Add(this.QR_PIC);
