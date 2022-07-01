@@ -50,6 +50,7 @@
             this.Start_BTN.Size = new System.Drawing.Size(194, 40);
             this.Start_BTN.TabIndex = 0;
             this.Start_BTN.UseVisualStyleBackColor = false;
+            this.Start_BTN.Click += new System.EventHandler(this.Start_BTN_Click);
             // 
             // Camera_Device
             // 
@@ -73,6 +74,7 @@
             // Timer
             // 
             this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Reader_BTN
             // 
@@ -108,6 +110,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Scanner_Form";
             this.Text = "Scanner";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Scanner_Form_FormClosing);
+            this.Load += new System.EventHandler(this.Scanner_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Webcam_PIC)).EndInit();
             this.ResumeLayout(false);
 
