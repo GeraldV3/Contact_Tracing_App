@@ -297,7 +297,7 @@ namespace Contact_Tracing_App.Properties
         private void Enter_BTN_Click(object sender, EventArgs e)
         {
             Hide();
-            Scanner QRScan = new Scanner();
+            Scanner_Form QRScan = new Scanner_Form();
             QRScan.ShowDialog();
         }
     }

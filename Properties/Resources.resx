@@ -127,8 +127,14 @@
   <data name="ADMIN Background6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="QRGeneratorBG8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="QRGeneratorBG3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Enter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QRGeneratorBG6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,6 +151,9 @@
   <data name="ALLDATA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ALLDATA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DATE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\DATE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +163,8 @@
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ADMIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\ADMIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Continuation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Continuation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ADMIN Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +174,9 @@
   </data>
   <data name="QRGeneratorBG7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CLICK HERE3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\CLICK HERE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +202,8 @@
   <data name="QRGeneratorBG4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ADMIN Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Scan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="New Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +223,8 @@
   <data name="ADMIN Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Continuation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\Continuation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ADMIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\ADMIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QRGeneratorBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,13 +244,16 @@
   <data name="Generate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Generate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ADMIN Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ADMIN Background3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Enter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\Enter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Read" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Read.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

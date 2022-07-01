@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nxeiRW8Q1un4ftmdPrmjV6JR8CXYmWlCSTPm4YXvsn12/OrGS0vsLAYrRANbdvjE083YlQWrGODVf5X1ccorhA==",
+  "dgSpecHash": "Wc+6Pj6v+XvEtuhbsihPbALeUzfWeLeJ1YV4Ar7Qnw1d+/IFu6qKR8MAS6RW+B7q0HyULqdBladOTSjqRNmLAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc\\Desktop\\OOP\\Contact Tracing App\\Contact Tracing App.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,8 @@
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+    "C:\\Users\\pc\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\zxing.net.bindings.windows.compatibility\\0.16.10\\zxing.net.bindings.windows.compatibility.0.16.10.nupkg.sha512"
   ],
   "logs": [
     {
