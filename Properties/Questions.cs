@@ -14,7 +14,8 @@ namespace Contact_Tracing_App.Properties
 {
     public partial class Questions : Form
     {
-        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\NEW Sound.wav");
+        SoundPlayer Click1 = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
         public Questions()
         {
             InitializeComponent();
@@ -202,62 +203,62 @@ namespace Contact_Tracing_App.Properties
         }
         private void LastName_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             LastName_LBL.Visible = false;
         }
         private void FirstName_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             FirstName_LBL.Visible = false;
         }
         private void ExtName_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             ExtName_LBL.Visible = false;
         }
         private void HomeNumber_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             HomeNumber_LBL.Visible = false;
         }
         private void StreetName_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             StreetName_LBL.Visible=false;
         }
         private void Barangay_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             Barangay_LBL.Visible=false;
         }
         private void Municipality_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             Municipality_LBL.Visible=false; 
         }
         private void ProvinceCity_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             ProvinceCity_LBL.Visible=false; 
         }
         private void Contact_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             Contact_LBL.Visible=false;  
         }
         private void Gender_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             Gender_LBL.Visible=false;
         }
         private void Birthday_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             Birthday_LBL.Visible=false;
         }
         private void CivilStatus_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             CivilStatus_LBL.Visible=false;
         }
         private void Diagnosed_BOX_Enter(object sender, EventArgs e)
@@ -298,39 +299,48 @@ namespace Contact_Tracing_App.Properties
         }
         private void Diagnosed_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             Diagnosed_LBL.Visible = false;
         }
         private void DATE_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             DATE_LBL.Visible = false;
         }
         private void MiddleName_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
             MiddleName_LBL.Visible = false;
         }
         private void Enter_BTN_Click(object sender, EventArgs e)
         {
+            Hide();
             Click.Play();
             Scanner_Form QRScan = new Scanner_Form();
             QRScan.ShowDialog();
         }
         private void Generate_BTN_Click(object sender, EventArgs e)
         {
-            Click.Play();
-            StreamWriter QRCODE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\QRCODE.txt", true);
-            QRCODE.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " + "Ext. Name " + ExtName_BOX.Text + " , "
-            + HomeNumber_BOX.Text + ", " + StreetName_BOX.Text + ", " + Barangay_BOX.Text + ", " + Municipality_BOX.Text + ", " +
-            ProvinceCity_BOX.Text + ", " + Contact_BOX.Text + ", " + Gender_BOX.Text + ", " + CivilStatus_BOX.Text + ", " + "Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text
-            + ", " + "Classfinication ? " + Class_BOX.Text + ", " + DATE_BOX.Text);
-            QRCODE.Close();
-            MessageBox.Show("You can now submit your Form!", "Generated!");
+            if (LastName_BOX.Text == "" || FirstName_BOX.Text == "" || MiddleName_BOX.Text == "" || ExtName_BOX.Text == "" || HomeNumber_BOX.Text == "" || StreetName_BOX.Text == "" || Municipality_BOX.Text == "" || Contact_BOX.Text == "" || Gender_BOX.Text == ""
+                || CivilStatus_BOX.Text == "" || Diagnosed_BOX.Text == "" || Class_BOX.Text == "" || DATE_BOX.Text == "")
+            {
+                MessageBox.Show("Please Complete the Form", "Error", MessageBoxButtons.OK);
+            }
+            else
+            {
+                Click.Play();
+                StreamWriter QRCODE = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\QRCODE.txt", true);
+                QRCODE.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " + "Ext. Name " + ExtName_BOX.Text + " , "
+                + HomeNumber_BOX.Text + ", " + StreetName_BOX.Text + ", " + Barangay_BOX.Text + ", " + Municipality_BOX.Text + ", " +
+                ProvinceCity_BOX.Text + ", " + Contact_BOX.Text + ", " + Gender_BOX.Text + ", " + CivilStatus_BOX.Text + ", " + "Patient Diagnosed with Covid-19? " + Diagnosed_BOX.Text
+                + ", " + "Classfinication ? " + Class_BOX.Text + ", " + DATE_BOX.Text);
+                QRCODE.Close();
+                MessageBox.Show("You can now submit your Form!", "Generated!");
+            }
         }
         private void Class_BOX_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            Click1.Play();
         }
     }
 }

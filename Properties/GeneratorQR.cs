@@ -14,7 +14,7 @@ namespace Contact_Tracing_App.Properties
 {
     public partial class QR_Generator : Form
     {
-        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\NEW Sound.wav");
         public QR_Generator()
         {
             InitializeComponent();

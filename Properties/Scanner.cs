@@ -18,7 +18,7 @@ namespace Contact_Tracing_App.Properties
 {
     public partial class Scanner_Form : Form
     {
-        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\NEW Sound.wav");
         private FilterInfoCollection CaptureDevice;
         private VideoCaptureDevice FinalFrame;
         public Scanner_Form()

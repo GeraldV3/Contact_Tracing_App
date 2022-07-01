@@ -4,7 +4,7 @@ namespace Contact_Tracing_App
 {
     public partial class Resgistration : Form
     {
-        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\NEW Sound.wav");
         public Resgistration()
         {
             InitializeComponent();

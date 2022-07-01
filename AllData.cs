@@ -14,7 +14,7 @@ namespace Contact_Tracing_App
 {
     public partial class AllData : Form
     {
-        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\NEW Sound.wav");
         public AllData()
         {
             InitializeComponent();

@@ -240,6 +240,15 @@ namespace Contact_Tracing_App.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Click2 {
+            get {
+                return ResourceManager.GetStream("Click2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Continuation4 {
@@ -356,6 +365,15 @@ namespace Contact_Tracing_App.Properties {
             get {
                 object obj = ResourceManager.GetObject("New Background5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream NEW_Sound {
+            get {
+                return ResourceManager.GetStream("NEW_Sound", resourceCulture);
             }
         }
         
