@@ -64,7 +64,7 @@
             // Webcam_PIC
             // 
             this.Webcam_PIC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Webcam_PIC.Location = new System.Drawing.Point(38, 197);
+            this.Webcam_PIC.Location = new System.Drawing.Point(44, 208);
             this.Webcam_PIC.Name = "Webcam_PIC";
             this.Webcam_PIC.Size = new System.Drawing.Size(382, 257);
             this.Webcam_PIC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,6 +91,7 @@
             // 
             // Info_BOX
             // 
+            this.Info_BOX.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Info_BOX.Location = new System.Drawing.Point(44, 541);
             this.Info_BOX.Name = "Info_BOX";
             this.Info_BOX.Size = new System.Drawing.Size(395, 48);

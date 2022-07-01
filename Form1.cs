@@ -4,12 +4,14 @@ namespace Contact_Tracing_App
 {
     public partial class Resgistration : Form
     {
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
         public Resgistration()
         {
             InitializeComponent();
         }
         private void Resgister_BTN_Click_1(object sender, EventArgs e)
         {
+            Click.Play();
             Hide();
             Questions Main = new Questions();
             Main.ShowDialog();
@@ -42,6 +44,7 @@ namespace Contact_Tracing_App
         }
         private void AccesstoMain_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             string username, password;
             username = Username_TxtBOX.Text;
             password = Password_TxtBOX.Text;

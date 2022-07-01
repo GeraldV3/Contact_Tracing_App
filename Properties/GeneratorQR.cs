@@ -8,27 +8,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QRCoder;
+using System.Media;
 
 namespace Contact_Tracing_App.Properties
 {
     public partial class QR_Generator : Form
     {
+        SoundPlayer Click = new SoundPlayer(@"C:\Users\pc\Desktop\OOP\Contact Tracing App\Picture and Sounds\Click.wav");
         public QR_Generator()
         {
             InitializeComponent();
             string path1 = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\QRCODE.txt";
             StreamReader INFO = new StreamReader(path1);
             string DATA = INFO.ReadToEnd();
-            QRcode_Txt.Text = DATA.ToString();
+            QR_TXT.Text = DATA.ToString();
         }
-
-        private void Generate_BTN_Click(object sender, EventArgs e)
+        private void GenerateBTN_Click(object sender, EventArgs e)
         {
             Click.Play();
             QRCodeGenerator QR = new QRCodeGenerator();
-            QRCodeData INFO = QR.CreateQrCode(QRcode_Txt.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCodeData INFO = QR.CreateQrCode(QR_TXT.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode CODE = new QRCode(INFO);
-            QR_PIC.Image = CODE.GetGraphic(5);
+            QRPIC.Image = CODE.GetGraphic(5);
         }
     }
 }

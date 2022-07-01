@@ -56,7 +56,6 @@ namespace Contact_Tracing_App.Properties
             }    
             else
             {
-                //For Personal Information
                 StreamWriter File = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\Information.txt", true);
                 File.WriteLine(LastName_BOX.Text + ", " + FirstName_BOX.Text + ", " + MiddleName_BOX.Text + ", " +"Ext. Name " + ExtName_BOX.Text + " , "
                 + HomeNumber_BOX.Text + ", "+ StreetName_BOX.Text + ", " + Barangay_BOX.Text + ", "  + Municipality_BOX.Text + ", "  +
@@ -65,7 +64,6 @@ namespace Contact_Tracing_App.Properties
                 File.Close();
                 MessageBox.Show("Thank You for your Particitipation!", "GodBless!", MessageBoxButtons.OK);
                 MessageBox.Show("Please Take a Screen Shot of your generated QR CODE", "Take Note!");
-                Hide();
                 QR_Generator QR = new QR_Generator();
                 QR.ShowDialog();
             }
@@ -316,7 +314,6 @@ namespace Contact_Tracing_App.Properties
         private void Enter_BTN_Click(object sender, EventArgs e)
         {
             Click.Play();
-            Hide();
             Scanner_Form QRScan = new Scanner_Form();
             QRScan.ShowDialog();
         }

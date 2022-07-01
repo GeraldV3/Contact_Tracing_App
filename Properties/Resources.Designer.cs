@@ -412,6 +412,16 @@ namespace Contact_Tracing_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap QRGeneratorBG10 {
+            get {
+                object obj = ResourceManager.GetObject("QRGeneratorBG10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap QRGeneratorBG2 {
             get {
                 object obj = ResourceManager.GetObject("QRGeneratorBG2", resourceCulture);
