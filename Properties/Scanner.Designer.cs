@@ -87,6 +87,7 @@
             this.Reader_BTN.Size = new System.Drawing.Size(184, 53);
             this.Reader_BTN.TabIndex = 5;
             this.Reader_BTN.UseVisualStyleBackColor = false;
+            this.Reader_BTN.Click += new System.EventHandler(this.Reader_BTN_Click);
             // 
             // Info_BOX
             // 

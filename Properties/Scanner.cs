@@ -46,5 +46,27 @@ namespace Contact_Tracing_App.Properties
             if (FinalFrame.IsRunning == true)
                 FinalFrame.Stop();
         }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            {
+                BarcodeReader reader = new BarcodeReader();
+                Result result = reader.Decode((Bitmap)Webcam_PIC.Image);
+                try
+                {
+                    string decoded = result.ToString().Trim();
+                    if (decoded != "")
+                    {
+                        Info_BOX.Text = decoded;
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+            }
+        }
+        private void Reader_BTN_Click(object sender, EventArgs e)
+        {
+            Timer.Start();
+        }
     }
 }
