@@ -48,6 +48,7 @@ namespace Contact_Tracing_App.Properties
         {
             if (FinalFrame.IsRunning == true)
                 FinalFrame.Stop();
+            Timer.Start();
         }
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -69,8 +70,21 @@ namespace Contact_Tracing_App.Properties
         }
         private void Reader_BTN_Click(object sender, EventArgs e)
         {
-            Click.Play();
-            Timer.Start();
+            String DATA = Info_BOX.Text;
+            if (DATA == "")
+            {
+                MessageBox.Show("Try again!", "Empty!");
+            }
+            else
+            {
+                Click.Play();
+                StreamWriter QRdata = new StreamWriter(@"C:\Users\pc\Desktop\OOP\Contract Tracing File\SCANNED QRCode.txt", true);
+                QRdata.WriteLine(DATA);
+                QRdata.Close();
+                MessageBox.Show("Your Information is Now Registered!");
+                MessageBox.Show("Thank You!");
+                Application.Restart();
+            }
         }
     }
 }

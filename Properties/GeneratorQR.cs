@@ -18,7 +18,7 @@ namespace Contact_Tracing_App.Properties
         public QR_Generator()
         {
             InitializeComponent();
-            string path1 = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\QRCODE.txt";
+            string path1 = @"C:\Users\pc\Desktop\OOP\Contract Tracing File\GeneratedQRCODE.txt";
             StreamReader INFO = new StreamReader(path1);
             string DATA = INFO.ReadToEnd();
             QR_TXT.Text = DATA.ToString();

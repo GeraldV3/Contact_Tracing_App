@@ -270,10 +270,10 @@
             // Next_Button
             // 
             this.Next_Button.BackColor = System.Drawing.Color.Transparent;
-            this.Next_Button.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.Submet;
+            this.Next_Button.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.Submit;
             this.Next_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Next_Button.Location = new System.Drawing.Point(877, 793);
+            this.Next_Button.Location = new System.Drawing.Point(881, 792);
             this.Next_Button.Name = "Next_Button";
             this.Next_Button.Size = new System.Drawing.Size(132, 38);
             this.Next_Button.TabIndex = 49;

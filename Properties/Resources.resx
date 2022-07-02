@@ -121,11 +121,14 @@
   <data name="CLICK HERE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\CLICK HERE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Generate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\Generate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ADMIN Background6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QRGeneratorBG10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QRGeneratorBG7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QRGeneratorBG8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +160,8 @@
   <data name="Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DATE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\DATE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Generate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Generate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QRGeneratorBG5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,9 +178,6 @@
   <data name="Submet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Submet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QRGeneratorBG7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Scan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,10 +193,16 @@
   <data name="New Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NEW_Sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\NEW Sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ADMIN Background5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ADMIN Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QRGeneratorBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QRGeneratorBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ADMIN Background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -208,6 +214,9 @@
   <data name="Scan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Click2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Click.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Read" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Read.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -216,6 +225,9 @@
   </data>
   <data name="New Background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\New Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DATE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\DATE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CLICK HERE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\CLICK HERE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +247,8 @@
   <data name="ALLDATA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\ALLDATA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QRGeneratorBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Click.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Scanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Scanner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,16 +274,7 @@
   <data name="Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sounds\Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QRGeneratorBG10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\QRGeneratorBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\Click.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="NEW_Sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\NEW Sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Click2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sounds\Click.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Submit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sounds\Submit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
